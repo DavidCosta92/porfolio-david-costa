@@ -1,0 +1,348 @@
+/* sass --watch style.scss style.css  */
+:root {
+  scroll-behavior: smooth;
+  --nav-bg-color:rgb(1, 39, 54);
+  --nav-text-color-white-smoth:rgba(255, 255, 255, 0.60);
+  --nav-text-color-white-solid:rgba(255, 255, 255,1);
+  --section-bg-color-1:rgba(33, 43, 56,1);
+  --section-bg-color-2:rgba(12, 25, 43, 0.7);
+  --bg-color-light-blue-050:rgba(3, 92, 127,0.5);
+  --hover-bg-color-dark-blue-050:rgba(1, 39, 54,0.5);
+  --hover-bg-color-dark-blue-075:rgba(1, 39, 54,0.75);
+  --hover-bg-color-dark-blue-solid:rgba(1, 39, 54,1);
+  --text-title-color-light-blue:rgba(3, 92, 127,1);
+  --text-title-color-dark-blue:rgb(1, 39, 54);
+  --text-color-white-semi-solid:rgba(255, 255, 255, 0.5);
+  --text-color-white-semi-solid-075:rgba(255, 255, 255, 0.75);
+  --text-color-white-solid:rgba(255, 255, 255, 1);
+  --text-color-grey-semi-solid:rgba(202, 202, 202, 0.5);
+  --nav-bg-color:rgb(1, 39, 54);
+  --nav-bg-color:rgb(1, 39, 54);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Barra lateral para Firefox  */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(36, 97, 204, 0.362) rgb(0, 0, 0);
+}
+
+/* Barra lateral para  Chrome, Edge, y Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(36, 97, 204, 0.362);
+  border-radius: 5px;
+  border: 1px solid rgba(3, 93, 249, 0.763);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+* .navbarContainer {
+  background-color: var(--nav-bg-color);
+  position: fixed;
+  top: 15px;
+  width: 100%;
+  z-index: 100;
+}
+* .navbarContainer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+* .navbarContainer ul a {
+  text-decoration: none;
+}
+* .navbarContainer ul a li {
+  margin: 12px;
+  color: var(--nav-text-color-white-smoth);
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 3px 5px;
+}
+* .navbarContainer ul a li:hover {
+  text-decoration: underline 3px var(--text-title-color-light-blue);
+  color: var(--nav-text-color-white-solid);
+  font-weight: 500;
+}
+* .presentacion {
+  background-color: var(--section-bg-color-1);
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+  padding: 35vh 20px 25vh 20px;
+}
+* .presentacion .nombre {
+  color: var(--text-title-color-light-blue);
+  font-size: 7rem;
+}
+* .presentacion .apellido {
+  color: var(--text-color-white-semi-solid);
+  font-size: 5rem;
+  line-height: 0;
+  margin-bottom: 40px;
+}
+* .presentacion .descripcion {
+  color: var(--text-color-grey-semi-solid);
+  font-size: 2.5rem;
+}
+* .aboutMe {
+  height: 100vh;
+  background-color: var(--section-bg-color-2);
+  text-align: center;
+  padding-top: 8vh;
+}
+* .aboutMe .texto1 {
+  line-height: 0;
+}
+* .aboutMe .texto1 p {
+  padding-top: 15vh;
+  color: var(--text-color-white-semi-solid-075);
+  font-size: 4rem;
+  margin-top: -7vh;
+}
+* .aboutMe .texto2 p {
+  color: var(--text-title-color-dark-blue);
+  font-size: 6rem;
+  margin-top: -7vh;
+  font-weight: 500;
+}
+* .aboutMe .texto3 p {
+  color: var(--text-title-color-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+* .aboutMe p {
+  color: var(--text-color-white-semi-solid-075);
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-top: 4vh;
+  margin: 0 30px 1vh;
+}
+* .aboutMe .cv a {
+  text-decoration: none;
+}
+* .aboutMe .cv a p {
+  color: var(--text-color-white-semi-solid);
+  font-size: 2rem;
+  font-weight: 300;
+  transition: all ease-in 0.3s;
+  padding: 2px;
+  margin: 4px;
+  margin-top: 5vh;
+  border-radius: 30px;
+  border: 0 solid rgba(2, 79, 208, 0.2);
+}
+* .aboutMe .cv a p:hover {
+  color: var(--nav-text-color-white-solid);
+  background-color: var(--hover-bg-color-dark-blue-075);
+}
+* .skills {
+  height: 100vh;
+  background-color: var(--section-bg-color-1);
+  padding: 0 20px;
+}
+* .skills p {
+  padding-top: 10vh;
+  color: var(--text-title-color-light-blue);
+  font-size: 4rem;
+  text-align: center;
+}
+* .skills .skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+  border-radius: 20px;
+  border: 1px solid var(--text-title-color-light-blue);
+}
+* .skills .skillsContainer img {
+  width: 10vw;
+  margin: 10px;
+}
+* .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
+  font-size: 1.5rem;
+  color: var(--text-color-white-semi-solid-075);
+  font-weight: 300;
+  padding-top: 7vh;
+}
+* .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
+  overflow-y: scroll;
+  height: 25vh;
+}
+* .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer p {
+  font-size: 2rem;
+  color: var(--text-color-white-semi-solid-075);
+}
+* .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer .divisor {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 1px;
+  margin: auto;
+  margin-top: 10px;
+  height: 1px;
+  background-color: var(--text-title-color-light-blue);
+  box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
+}
+* .proyectos {
+  background-color: var(--section-bg-color-2);
+  height: 100vh;
+  padding: 0 10px;
+  text-align: center;
+}
+* .proyectos p {
+  padding-top: 12vh;
+  color: var(--text-color-white-semi-solid-075);
+  font-size: 3rem;
+  margin-bottom: 5vh;
+}
+* .proyectos .proyectosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 74vh;
+}
+* .proyectos .proyectosContainer .cardProyect {
+  border-radius: 8px;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+* .proyectos .proyectosContainer .cardProyect:hover {
+  filter: drop-shadow(0 0 3px var(--bg-color-light-blue-050));
+}
+* .proyectos .proyectosContainer .cardProyect .info {
+  background-color: var(--bg-color-light-blue-050) !important;
+  z-index: 500;
+  visibility: visible;
+}
+* .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  margin-top: 180px;
+}
+* .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input {
+  width: 80px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: var(--hover-bg-color-dark-blue-solid);
+  color: white;
+  font-weight: 300;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px var(--hover-bg-color-dark-blue-solid) solid;
+}
+* .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input:hover {
+  background-color: var(--nav-text-color-white-smoth);
+  color: black;
+  font-weight: 500;
+  transform: scale(1.06);
+  cursor: pointer;
+}
+* .proyectos .proyectosContainer .cardProyect .info #tituloProyecto {
+  color: white;
+  background-color: rgba(12, 34, 52, 0.6);
+  font-size: 1.15rem;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+* .proyectos .proyectosContainer .cardProyect .info #descripcionProyecto {
+  color: white;
+  background-color: var(--hover-bg-color-dark-blue-050);
+  padding: 5px;
+  font-size: 0.85rem;
+}
+* .charlemos {
+  background-color: var(--section-bg-color-1);
+  height: 100vh;
+  padding: 0 10px;
+  text-align: center;
+}
+* .charlemos p {
+  padding-top: 20vh;
+  color: var(--text-title-color-light-blue);
+  font-size: 3rem;
+}
+* .charlemos .formulario {
+  padding-top: 10vh;
+}
+* .charlemos .formulario .labelFormContacto {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+* .charlemos .formulario .labelFormContacto label {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  color: var(--text-color-white-semi-solid-075);
+}
+* .charlemos .formulario .labelFormContacto input {
+  background-color: var(--section-bg-color-1);
+  color: white;
+  border-color: rgba(44, 72, 120, 0.362);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1.05rem;
+}
+* .charlemos .formulario .labelFormContacto input:focus {
+  border-color: var(--text-title-color-light-blue);
+}
+* .charlemos .formulario textarea {
+  background-color: var(--section-bg-color-1);
+  color: white;
+  border-radius: 4px;
+  min-height: 70px;
+  border-color: var(--text-title-color-light-blue);
+}
+* .charlemos .formulario .botonEnvio {
+  width: 80%;
+  max-width: 450px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--text-title-color-light-blue);
+  padding: 2px;
+  margin-top: 5px;
+  color: white;
+  height: 30px;
+  font-size: 1rem;
+}
+* .charlemos .formulario .botonEnvio:hover {
+  color: white;
+  background-color: var(--text-title-color-light-blue);
+  font-weight: 600;
+  box-shadow: 1px 1px 1px rgb(170, 169, 169);
+}
+* .charlemos .contacto svg {
+  fill: var(--text-color-white-semi-solid-075);
+  height: 45px;
+  margin: 20px;
+  margin-top: 30px;
+}
+* .charlemos .contacto svg:hover {
+  fill: var(--nav-text-color-white-solid);
+  transform: scale(1.08);
+}
+
+/*# sourceMappingURL=style.css.map */

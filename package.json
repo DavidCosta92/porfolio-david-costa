@@ -1,0 +1,16 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "Porfolio personal de Costa David",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch assets/css/scss/style.scss  assets/css/style.css"
+  },
+  "author": "COSTA DAVID",
+  "license": "ISC", 
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
