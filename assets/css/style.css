@@ -316,8 +316,9 @@
   border-right: 0;
   font-size: 1.05rem;
 }
-* .charlemos .formulario .labelFormContacto input:focus {
-  border-color: var(--text-title-color-light-blue);
+* .charlemos .formulario .labelFormContacto input:focus-within {
+  outline: 2px solid var(--text-title-color-light-blue);
+  border-radius: 8px;
 }
 * .charlemos .formulario textarea {
   background-color: var(--section-bg-color-1);
@@ -326,12 +327,16 @@
   min-height: 70px;
   border-color: var(--text-title-color-light-blue);
 }
+* .charlemos .formulario textarea:focus-within {
+  outline: 2px solid var(--text-title-color-light-blue);
+  border-radius: 8px;
+}
 * .charlemos .formulario .botonEnvio {
   width: 80%;
   max-width: 450px;
   background-color: transparent;
   border-radius: 20px;
-  border: 1px solid var(--text-title-color-light-blue);
+  border: 2px solid var(--text-title-color-light-blue);
   padding: 2px;
   margin-top: 5px;
   color: white;
@@ -353,6 +358,7 @@
 * .charlemos .contacto svg:hover {
   fill: var(--nav-text-color-white-solid);
   transform: scale(1.08);
+  filter: drop-shadow(3px 3px 2px var(--text-title-color-light-blue));
 }
 * .swipeIcon {
   position: relative;
@@ -365,7 +371,7 @@
   animation-iteration-count: infinite;
   width: 60px;
   animation-direction: alternate;
-  filter: drop-shadow(3px 2px var(--text-title-color-light-blue));
+  filter: drop-shadow(2px 2px var(--text-title-color-light-blue));
 }
 @keyframes swipeIcon {
   from {

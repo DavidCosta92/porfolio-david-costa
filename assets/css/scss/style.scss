@@ -338,8 +338,9 @@
                     border-left: 0;
                     border-right: 0;
                     font-size: 1.05rem;
-                    &:focus{
-                        border-color: var(--text-title-color-light-blue); 
+                    &:focus-within{
+                        outline: 2px solid var(--text-title-color-light-blue);
+                        border-radius: 8px;
                     }
                 }
             }
@@ -349,13 +350,17 @@
                 border-radius: 10px;
                 min-height: 70px;
                 border-color: var(--text-title-color-light-blue); 
+                &:focus-within{
+                    outline: 2px solid var(--text-title-color-light-blue);
+                    border-radius: 8px;
+                }
             }
             .botonEnvio{
                 width: 80%;
                 max-width: 450px;
                 background-color: transparent; 
                 border-radius: 20px;
-                border: 1px solid var(--text-title-color-light-blue);
+                border: 2px solid var(--text-title-color-light-blue);
                 padding: 2px;
                 margin-top: 5px;
                 color: white;
@@ -379,6 +384,7 @@
                 &:hover{
                     fill: var(--nav-text-color-white-solid);
                     transform: scale(1.08);
+                    filter: drop-shadow(3px 3px 2px var(--text-title-color-light-blue));
                 }
             }
         }
@@ -395,7 +401,7 @@
             animation-iteration-count: infinite;
             width: 60px;
             animation-direction: alternate;
-            filter:drop-shadow(3px 2px var(--text-title-color-light-blue))
+            filter:drop-shadow(2px 2px var(--text-title-color-light-blue))
 
         }        
         @keyframes swipeIcon {
