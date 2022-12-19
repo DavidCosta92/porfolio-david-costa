@@ -231,9 +231,14 @@
             color: var(--text-color-white-semi-solid-075);
             font-size: 3rem;
             margin-bottom: 5vh;
+            position: relative;
+            z-index: 90;
         }
         .difuminado {
-            box-shadow: 5px 5px 40px 30px rgba(23, 89, 175, 0.7), inset 0px 0px 0px 46px rgba(216, 5, 5, 0.64);
+            top: -25vh;
+            box-shadow: 0px 50px 30px 120px rgb(84 94 106);
+            position: relative;           
+            z-index: 5;
           }
         .proyectosContainer{
             display: flex;
@@ -242,6 +247,8 @@
             padding: 10px;
             overflow-y: scroll;
             height: 74vh;
+            position: relative;
+            top: -100px;
             .cardProyect{
                 border-radius: 8px;
                 max-width: 400px;
@@ -320,13 +327,13 @@
                 label{
                     margin-bottom: 8px;
                     font-size: 0.95rem;
-                    margin-bottom: 2px;
+                    margin-bottom: 4px;
                     color:var(--text-color-white-semi-solid-075); 
                 }
                 input{
                     background-color: var(--section-bg-color-1);
                     color: white;
-                    border-color: rgba(44, 72, 120, 0.362); 
+                    border-color: var(--text-title-color-light-blue); 
                     border-top: 0;
                     border-left: 0;
                     border-right: 0;
@@ -339,7 +346,7 @@
             textarea{
                 background-color: var(--section-bg-color-1);
                 color: white;
-                border-radius: 4px;
+                border-radius: 10px;
                 min-height: 70px;
                 border-color: var(--text-title-color-light-blue); 
             }
@@ -352,7 +359,7 @@
                 padding: 2px;
                 margin-top: 5px;
                 color: white;
-                height: 30px;
+                height: 40px;
                 font-size: 1rem;
                 &:hover{
                     color: white;
@@ -380,15 +387,15 @@
     .swipeIcon{
         position: relative;
         top: -110px;
-        width: 60px;
+        width: 70px;
 
-        img{
+        img{    
             animation-name: swipeIcon;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             width: 60px;
             animation-direction: alternate;
-            filter:drop-shadow(1px 1px 3px var(--text-title-color-light-blue))
+            filter:drop-shadow(3px 2px var(--text-title-color-light-blue))
 
         }        
         @keyframes swipeIcon {
