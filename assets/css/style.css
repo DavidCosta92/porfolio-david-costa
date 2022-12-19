@@ -210,6 +210,9 @@
   font-size: 3rem;
   margin-bottom: 5vh;
 }
+* .proyectos .difuminado {
+  box-shadow: 5px 5px 40px 30px rgba(23, 89, 175, 0.7), inset 0px 0px 0px 46px rgba(216, 5, 5, 0.64);
+}
 * .proyectos .proyectosContainer {
   display: flex;
   flex-wrap: wrap;
@@ -343,6 +346,35 @@
 * .charlemos .contacto svg:hover {
   fill: var(--nav-text-color-white-solid);
   transform: scale(1.08);
+}
+* .swipeIcon {
+  position: relative;
+  top: -110px;
+  width: 60px;
+}
+* .swipeIcon img {
+  animation-name: swipeIcon;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 60px;
+  animation-direction: alternate;
+  filter: drop-shadow(1px 1px 3px var(--text-title-color-light-blue));
+}
+@keyframes swipeIcon {
+  from {
+    transform: rotate(150deg);
+    transform-origin: 0;
+  }
+  to {
+    transform: rotate(50deg);
+    transform-origin: 5;
+  }
+}
+* #proyectos .swipeIcon {
+  top: 100px;
+  z-index: 10;
+  left: calc(100vw - 130px);
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=style.css.map */
