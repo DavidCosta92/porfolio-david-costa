@@ -10,7 +10,7 @@
   },
   "author": "COSTA DAVID",
   "license": "ISC", 
-  "dependencies": {
+  "dependencies": { 
     "node-sass": "^8.0.0"
   }
 }

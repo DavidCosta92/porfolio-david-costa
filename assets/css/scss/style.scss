@@ -1,4 +1,4 @@
-/* sass --watch style.scss style.css  */
+/* npm run sass:watch   */
 :root{
     scroll-behavior: smooth;
     --nav-bg-color:rgb(1, 39, 54);
@@ -6,7 +6,7 @@
     --nav-text-color-white-solid:rgba(255, 255, 255,1); 
 
     --section-bg-color-1:rgba(33, 43, 56,1);
-    --section-bg-color-2:rgba(12, 25, 43, 0.7);
+    --section-bg-color-2:rgba(12, 25, 43, 0.7); 
 
     --bg-color-light-blue-050:rgba(3, 92, 127,0.5);
 
