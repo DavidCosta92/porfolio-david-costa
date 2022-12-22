@@ -15,20 +15,20 @@
     --hover-bg-color-dark-blue-solid:rgba(1, 39, 54,1);
 
     --text-title-color-light-blue:rgba(3, 92, 127,1);
+    --text-title-color-super-light-blue:rgb(0, 183, 255);
     --text-title-color-dark-blue:rgb(1, 39, 54);
     
     --text-color-white-semi-solid:rgba(255, 255, 255, 0.5);
     --text-color-white-semi-solid-075:rgba(255, 255, 255, 0.75);
     --text-color-white-solid:rgba(255, 255, 255, 1);
     --text-color-grey-semi-solid:rgba(202, 202, 202, 0.5);
-
     
 
     --nav-bg-color:rgb(1, 39, 54);
     --nav-bg-color:rgb(1, 39, 54);
 }
 ::-webkit-scrollbar {
-    display: none;
+   /* display: none; */
 }
 /* Barra lateral para Firefox  */
 * {
@@ -43,9 +43,9 @@
     background: rgb(0, 0, 0);
   }
   *::-webkit-scrollbar-thumb {
-    background-color: rgba(36, 97, 204, 0.362);
+    background-color: var(--bg-color-light-blue-050);
     border-radius: 5px;
-    border: 1px solid rgba(3, 93, 249, 0.763);
+    border: 1px solid var(--text-title-color-light-blue);
   }
 *{
     margin: 0;
@@ -193,7 +193,7 @@
                     font-size: 1.5rem;
                     color: var(--text-color-white-semi-solid-075);
                     font-weight: 300;
-                    padding-top: 7vh;
+                    padding-top: 5vh;
                 }
                 
                 .softContainer {
@@ -214,6 +214,22 @@
                         background-color: var(--text-title-color-light-blue);
                         box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
                     }
+                }
+                .divisor2{
+                    width: 70%;
+                    max-width: 300px;
+                    border-radius: 1px;
+                    margin: auto;
+                    margin-top: 30px;
+                    height: 1px;
+                    background-color: var(--text-title-color-light-blue);
+                    box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
+                }
+                .palabraEspecialSoftSkills{
+                    color: var(--text-title-color-super-light-blue);
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    
                 }
 
             }
@@ -240,6 +256,16 @@
             position: relative;           
             z-index: 5;
           }
+        .scrollProyectos{
+            width: 95%;
+            position: absolute;
+            z-index: 20;
+            display: flex;
+            justify-content: end;
+            img{
+                width: 60px;
+            }
+        }
         .proyectosContainer{
             display: flex;
             flex-wrap: wrap;
@@ -248,7 +274,6 @@
             overflow-y: scroll;
             height: 74vh;
             position: relative;
-            top: -100px;
             .cardProyect{
                 border-radius: 8px;
                 max-width: 400px;
@@ -390,6 +415,7 @@
         }
 
     }
+    /*
     .swipeIcon{
         position: relative;
         top: -110px;
@@ -421,4 +447,19 @@
         left: calc(100vw - 130px);
         transform: scaleX(-1);
     }
+    */
+}
+
+/* Medias queries  */
+@media (min-width: 1000px){
+    ::-webkit-scrollbar {
+        display: none;
+     }
+    .proyectos{
+        .scrollProyectos img{
+            display: none;
+        }
+
+    }
+
 }

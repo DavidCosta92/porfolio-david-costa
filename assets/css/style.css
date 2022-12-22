@@ -11,6 +11,7 @@
   --hover-bg-color-dark-blue-075:rgba(1, 39, 54,0.75);
   --hover-bg-color-dark-blue-solid:rgba(1, 39, 54,1);
   --text-title-color-light-blue:rgba(3, 92, 127,1);
+  --text-title-color-super-light-blue:rgb(0, 183, 255);
   --text-title-color-dark-blue:rgb(1, 39, 54);
   --text-color-white-semi-solid:rgba(255, 255, 255, 0.5);
   --text-color-white-semi-solid-075:rgba(255, 255, 255, 0.75);
@@ -21,7 +22,7 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 /* Barra lateral para Firefox  */
@@ -40,9 +41,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(36, 97, 204, 0.362);
+  background-color: var(--bg-color-light-blue-050);
   border-radius: 5px;
-  border: 1px solid rgba(3, 93, 249, 0.763);
+  border: 1px solid var(--text-title-color-light-blue);
 }
 
 * {
@@ -50,6 +51,39 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Signika Negative", sans-serif;
+  /*
+  .swipeIcon{
+      position: relative;
+      top: -110px;
+      width: 70px;
+
+      img{    
+          animation-name: swipeIcon;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          width: 60px;
+          animation-direction: alternate;
+          filter:drop-shadow(2px 2px var(--text-title-color-light-blue))
+
+      }        
+      @keyframes swipeIcon {
+      from {
+          transform: rotate(150deg); transform-origin: 0;
+      }
+
+      to {
+          transform: rotate(50deg); transform-origin: 5;
+      }
+      }
+
+  }
+  #proyectos .swipeIcon{
+      top: 100px;
+      z-index: 10;
+      left: calc(100vw - 130px);
+      transform: scaleX(-1);
+  }
+  */
 }
 * .navbarContainer {
   background-color: var(--nav-bg-color);
@@ -178,7 +212,7 @@
   font-size: 1.5rem;
   color: var(--text-color-white-semi-solid-075);
   font-weight: 300;
-  padding-top: 7vh;
+  padding-top: 5vh;
 }
 * .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
   overflow-y: scroll;
@@ -197,6 +231,21 @@
   height: 1px;
   background-color: var(--text-title-color-light-blue);
   box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
+}
+* .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
+  width: 70%;
+  max-width: 300px;
+  border-radius: 1px;
+  margin: auto;
+  margin-top: 30px;
+  height: 1px;
+  background-color: var(--text-title-color-light-blue);
+  box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
+}
+* .skills .aprendiendoContainer .contenedorAprendizajesB .palabraEspecialSoftSkills {
+  color: var(--text-title-color-super-light-blue);
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 * .proyectos {
   background-color: var(--section-bg-color-2);
@@ -218,6 +267,16 @@
   position: relative;
   z-index: 5;
 }
+* .proyectos .scrollProyectos {
+  width: 95%;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  justify-content: end;
+}
+* .proyectos .scrollProyectos img {
+  width: 60px;
+}
 * .proyectos .proyectosContainer {
   display: flex;
   flex-wrap: wrap;
@@ -226,7 +285,6 @@
   overflow-y: scroll;
   height: 74vh;
   position: relative;
-  top: -100px;
 }
 * .proyectos .proyectosContainer .cardProyect {
   border-radius: 8px;
@@ -360,34 +418,15 @@
   transform: scale(1.08);
   filter: drop-shadow(3px 3px 2px var(--text-title-color-light-blue));
 }
-* .swipeIcon {
-  position: relative;
-  top: -110px;
-  width: 70px;
-}
-* .swipeIcon img {
-  animation-name: swipeIcon;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  width: 60px;
-  animation-direction: alternate;
-  filter: drop-shadow(2px 2px var(--text-title-color-light-blue));
-}
-@keyframes swipeIcon {
-  from {
-    transform: rotate(150deg);
-    transform-origin: 0;
+
+/* Medias queries  */
+@media (min-width: 1000px) {
+  ::-webkit-scrollbar {
+    display: none;
   }
-  to {
-    transform: rotate(50deg);
-    transform-origin: 5;
+  .proyectos .scrollProyectos img {
+    display: none;
   }
-}
-* #proyectos .swipeIcon {
-  top: 100px;
-  z-index: 10;
-  left: calc(100vw - 130px);
-  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=style.css.map */
