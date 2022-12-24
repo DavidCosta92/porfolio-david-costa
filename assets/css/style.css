@@ -85,12 +85,30 @@
   }
   */
 }
+@keyframes inicial {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* .snapScrollWrapper {
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+* .snapScrollWrapper .snapScrollSection {
+  scroll-snap-align: start;
+}
 * .navbarContainer {
   background-color: var(--nav-bg-color);
   position: fixed;
   top: 15px;
   width: 100%;
   z-index: 100;
+  animation: inicial 7.5s 1;
 }
 * .navbarContainer ul {
   display: flex;
@@ -117,22 +135,39 @@
   background-color: var(--section-bg-color-1);
   text-align: center;
   height: 100vh;
-  padding: 20px;
-  padding: 35vh 20px 25vh 20px;
+  /*padding: 35vh 20px 25vh 20px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--text-color-grey-semi-solid);
+}
+* .presentacion .hola {
+  color: var(--text-color-white-semi-solid-075);
+  margin-top: 15vh;
+  font-size: 2.5rem;
+}
+* .presentacion .soy {
+  color: var(--text-color-white-semi-solid);
+  font-size: 2.5rem;
+  margin-bottom: -10vh;
+  animation: inicial 1.5s;
 }
 * .presentacion .nombre {
   color: var(--text-title-color-light-blue);
   font-size: 7rem;
+  margin-bottom: -12vh;
+  /* animation: inicial 2.5s;    */
 }
 * .presentacion .apellido {
-  color: var(--text-color-white-semi-solid);
   font-size: 5rem;
   line-height: 0;
   margin-bottom: 40px;
+  animation: inicial 3s;
 }
 * .presentacion .descripcion {
-  color: var(--text-color-grey-semi-solid);
   font-size: 2.5rem;
+  margin-bottom: 15vh;
+  animation: inicial 5s;
 }
 * .aboutMe {
   height: 100vh;
@@ -273,9 +308,22 @@
   z-index: 20;
   display: flex;
   justify-content: end;
+  animation-name: scrolling;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 * .proyectos .scrollProyectos img {
   width: 60px;
+}
+@keyframes scrolling {
+  from {
+    filter: drop-shadow(2px 2px var(--text-title-color-light-blue));
+  }
+  to {
+    filter: drop-shadow(2px 2px var(--text-title-color-dark-blue));
+    transform: scale(1.025);
+  }
 }
 * .proyectos .proyectosContainer {
   display: flex;
