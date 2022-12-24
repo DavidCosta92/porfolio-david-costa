@@ -106,7 +106,7 @@
   scroll-snap-align: start;
 }
 * .navbarContainer {
-  background-color: var(--nav-bg-color);
+  background-color: transparent; /*var(--nav-bg-color); */
   position: fixed;
   top: 15px;
   width: 100%;
@@ -124,10 +124,11 @@
 }
 * .navbarContainer ul a li {
   margin: 12px;
-  color: var(--nav-text-color-white-smoth);
-  font-size: 1.1rem;
-  font-weight: 300;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
   padding: 3px 5px;
+  filter: drop-shadow(2px 2px 2px rgb(3, 242, 255));
 }
 * .navbarContainer ul a li:hover {
   text-decoration: underline 3px var(--text-title-color-light-blue);
@@ -146,7 +147,7 @@
 }
 * .presentacion .hola {
   color: var(--text-color-white-semi-solid-075);
-  margin-top: 15vh;
+  margin-top: 10vh;
   font-size: 6rem;
   position: absolute;
   text-align: center;

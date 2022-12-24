@@ -69,12 +69,13 @@
       }
 
     .navbarContainer{
-        background-color:  var(--nav-bg-color);
+        background-color: transparent;  /*var(--nav-bg-color); */
         position: fixed;
         top: 15px;
         width: 100%;
         z-index: 100;
         animation: inicial 7.5s 1;
+        
         ul{
             display: flex;
             justify-content: space-around;
@@ -82,14 +83,15 @@
             align-items: center;
             a{
                 text-decoration: none;    
+                
                 li{
                     margin: 12px;
-                    color: var(--nav-text-color-white-smoth);
-                    font-size: 1.1rem;
-                    font-weight: 300;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: 400;
                     padding: 3px 5px;
-
-                    //transition: text-decoration ease-in-out 5s;
+                    filter: drop-shadow(2px 2px 2px rgb(3, 242, 255));
+                    
 
                     &:hover{                        
                         text-decoration: underline 3px var(--text-title-color-light-blue);
@@ -112,7 +114,7 @@
         color: var(--text-color-grey-semi-solid);
         .hola{            
             color: var(--text-color-white-semi-solid-075);
-            margin-top: 15vh;            
+            margin-top: 10vh;            
             font-size: 6rem;
             position: absolute;
             text-align: center;
