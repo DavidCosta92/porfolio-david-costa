@@ -22,7 +22,7 @@
 }
 
 ::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 
 /* Barra lateral para Firefox  */
@@ -37,7 +37,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);
+  background: var(--text-title-color-dark-blue);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -87,6 +87,9 @@
 }
 @keyframes inicial {
   from {
+    opacity: 0;
+  }
+  90% {
     opacity: 0;
   }
   to {
@@ -144,19 +147,34 @@
 * .presentacion .hola {
   color: var(--text-color-white-semi-solid-075);
   margin-top: 15vh;
-  font-size: 2.5rem;
+  font-size: 6rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  animation: hola 1.5s;
+  opacity: 0;
+}
+@keyframes hola {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 * .presentacion .soy {
   color: var(--text-color-white-semi-solid);
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: -10vh;
-  animation: inicial 1.5s;
+  margin-top: 10vh;
+  animation: inicial 2s;
 }
 * .presentacion .nombre {
   color: var(--text-title-color-light-blue);
   font-size: 7rem;
-  margin-bottom: -12vh;
-  /* animation: inicial 2.5s;    */
+  margin-top: 100px;
+  margin-bottom: -100px;
+  animation: inicial 2.5s;
 }
 * .presentacion .apellido {
   font-size: 5rem;
@@ -167,7 +185,7 @@
 * .presentacion .descripcion {
   font-size: 2.5rem;
   margin-bottom: 15vh;
-  animation: inicial 5s;
+  animation: inicial 4s;
 }
 * .aboutMe {
   height: 100vh;

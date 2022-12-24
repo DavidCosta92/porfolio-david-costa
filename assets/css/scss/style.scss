@@ -28,7 +28,7 @@
     --nav-bg-color:rgb(1, 39, 54);
 }
 ::-webkit-scrollbar {
-   /* display: none; */
+    display: none; 
 }
 /* Barra lateral para Firefox  */
 * {
@@ -40,13 +40,14 @@
     width: 5px;
   }
   *::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);
+    background: var(--text-title-color-dark-blue);
   }
   *::-webkit-scrollbar-thumb {
     background-color: var(--bg-color-light-blue-050);
     border-radius: 5px;
     border: 1px solid var(--text-title-color-light-blue);
   }
+
 *{
     margin: 0;
     padding: 0;
@@ -54,6 +55,7 @@
     font-family: 'Signika Negative', sans-serif;
     @keyframes inicial {
         from {opacity: 0;}
+        90%{opacity: 0; }
         to { opacity: 1; }
     }
     .snapScrollWrapper {
@@ -111,19 +113,30 @@
         .hola{            
             color: var(--text-color-white-semi-solid-075);
             margin-top: 15vh;            
-            font-size: 2.5rem;
+            font-size: 6rem;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            animation: hola 1.5s;
+            opacity: 0;
+        }
+        @keyframes hola {
+            from { opacity: 1; }
+            to { opacity: 0; }
         }
         .soy{
             color: var(--text-color-white-semi-solid);
-            font-size: 2.5rem;
+            font-size: 4rem;
             margin-bottom: -10vh;
-            animation: inicial 1.5s;
+            margin-top: 10vh;
+            animation: inicial 2s;
         }
         .nombre{
             color: var(--text-title-color-light-blue);
             font-size: 7rem;
-            margin-bottom: -12vh;
-           /* animation: inicial 2.5s;    */
+            margin-top: 100px;
+            margin-bottom: -100px;
+            animation: inicial 2.5s;
         }
         .apellido{
             font-size: 5rem;
@@ -134,7 +147,7 @@
         .descripcion{
             font-size: 2.5rem;
             margin-bottom: 15vh;
-            animation: inicial 5s;
+            animation: inicial 4s;
         }
     }
     .aboutMe{
@@ -217,21 +230,17 @@
                 margin: 10px;
             }
         }
-        .aprendiendoContainer{
-            
-            .contenedorAprendizajesB{
-                
+        .aprendiendoContainer{            
+            .contenedorAprendizajesB{                
                 .softSkills{
                     font-size: 1.5rem;
                     color: var(--text-color-white-semi-solid-075);
                     font-weight: 300;
                     padding-top: 5vh;
-                }
-                
+                }                
                 .softContainer {
                     overflow-y: scroll;
-                    height: 25vh;
-                   
+                    height: 25vh;                   
                     p{
                         font-size: 2rem;
                         color: var(--text-color-white-semi-solid-075);
@@ -260,14 +269,10 @@
                 .palabraEspecialSoftSkills{
                     color: var(--text-title-color-super-light-blue);
                     font-weight: 500;
-                    font-size: 1.5rem;
-                    
+                    font-size: 1.5rem;                    
                 }
-
             }
-
         }
-
     }
     .proyectos{
         background-color: var(--section-bg-color-2);

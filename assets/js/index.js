@@ -1,3 +1,4 @@
+/*
 import tinyTypewriter from 'tiny-typewriter/src/';
 
 const typewriter = document.querySelector("#typewriter");
@@ -29,7 +30,7 @@ tinyTypewriter(typewriter, {
     
   });
 
-
+*/
 /*
 (function() {
     // https://dashboard.emailjs.com/admin/account
