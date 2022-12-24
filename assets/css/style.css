@@ -106,9 +106,8 @@
   scroll-snap-align: start;
 }
 * .navbarContainer {
-  background-color: transparent; /*var(--nav-bg-color); */
+  background-color: rgba(0, 0, 0, 0.15);
   position: fixed;
-  top: 15px;
   width: 100%;
   z-index: 100;
   animation: inicial 7.5s 1;
@@ -243,6 +242,7 @@
   height: 100vh;
   background-color: var(--section-bg-color-1);
   padding: 0 20px;
+  overflow: scroll;
 }
 * .skills p {
   padding-top: 10vh;
@@ -418,7 +418,8 @@
   font-size: 3rem;
 }
 * .charlemos .formulario {
-  padding-top: 10vh;
+  z-index: 1000;
+  position: relative;
 }
 * .charlemos .formulario .labelFormContacto {
   display: flex;
@@ -484,6 +485,9 @@
   fill: var(--nav-text-color-white-solid);
   transform: scale(1.08);
   filter: drop-shadow(3px 3px 2px var(--text-title-color-light-blue));
+}
+* #mensajeEnviado {
+  display: none;
 }
 
 /* Medias queries  */

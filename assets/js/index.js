@@ -1,3 +1,17 @@
+// var botonEnvioForm = document.getElementById('botonEnvioForm');
+var alertaMensajeEnviado = document.getElementById('mensajeEnviado');
+// console.log(botonEnvioForm)
+// botonEnvioForm.addEventListener("click", enviarMsj())
+
+function enviarMsj(){
+    alertaMensajeEnviado.style.display = "block";
+    setTimeout(()=>{
+        alertaMensajeEnviado.style.display = "none";
+    }, "3000")
+}
+
+
+
 /*
 import tinyTypewriter from 'tiny-typewriter/src/';
 

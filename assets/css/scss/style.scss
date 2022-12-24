@@ -69,9 +69,8 @@
       }
 
     .navbarContainer{
-        background-color: transparent;  /*var(--nav-bg-color); */
+        background-color: rgba(0, 0, 0, 0.15);
         position: fixed;
-        top: 15px;
         width: 100%;
         z-index: 100;
         animation: inicial 7.5s 1;
@@ -213,6 +212,7 @@
         height: 100vh;
         background-color: var(--section-bg-color-1);
         padding: 0 20px;
+        overflow: scroll;
         p{
             padding-top: 10vh;
             color: var(--text-title-color-light-blue);
@@ -399,7 +399,8 @@
             font-size: 3rem;
         }
         .formulario{
-            padding-top: 10vh;
+            z-index: 1000;
+            position: relative;
             .labelFormContacto{
                 display: flex;
                 flex-direction: column;
@@ -504,6 +505,9 @@
         transform: scaleX(-1);
     }
     */
+    #mensajeEnviado{
+        display: none;
+    }
 }
 
 /* Medias queries  */
