@@ -146,7 +146,7 @@
         }
         .descripcion{
             font-size: 2.5rem;
-            margin-bottom: 10vh;
+            margin-bottom: 13vh;
             animation: inicial 4s;
         }
         .bienvenido{
@@ -178,16 +178,15 @@
             p{
                 padding-top: 12vh;
                 color: var(--text-color-white-semi-solid-075);
-                font-size: 4rem;
-                margin-top: -60px;
+                font-size: 3.5rem;
             }
         }
         .texto2{
             p{
                 color: var(--text-title-color-dark-blue);
-                font-size: 6rem;
+                font-size: 4.5rem;
                 font-weight: 500;
-                margin-top: -32px;
+                margin-top: -20px;
             }
         }
         .texto3 p{
@@ -239,10 +238,10 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        padding-top: 27vh;
         p{
-            padding-top: 50px;
             color: var(--text-title-color-light-blue);
-            font-size: 4rem;
+            font-size: 3.5rem;
             text-align: center;
         }
         
@@ -267,7 +266,7 @@
             margin-bottom: 100px;        
             .contenedorAprendizajesB{                
                 .softSkills{
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     color: var(--text-color-white-semi-solid-075);
                     font-weight: 300;
                     padding-top: 5vh;
@@ -303,7 +302,7 @@
                 .palabraEspecialSoftSkills{
                     color: var(--text-title-color-super-light-blue);
                     font-weight: 500;
-                    font-size: 1.5rem;                    
+                    font-size: 1.25rem;                    
                 }
             }
         }
@@ -316,10 +315,10 @@
         p{
             padding-top: 50px;
             color: var(--text-color-white-semi-solid-075);
-            font-size: 4rem;
-            margin-bottom: 4vh;
+            font-size: 3.5rem;
             position: relative;
             z-index: 90;
+            line-height: 1em;
         }
         .difuminado {
             top: -25vh;
@@ -430,9 +429,9 @@
         padding: 0 10px;
         text-align: center;
         p{
-            padding-top: 20vh;
+            padding-top: 10vh;
             color: var(--text-title-color-light-blue);
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
         .formulario{
             z-index: 1000;
@@ -496,9 +495,9 @@
         .contacto{
             svg{
                 fill: var(--text-color-white-semi-solid-075);
-                height: 50px;
+                height: 45px;
                 margin: 20px;
-                margin-top: 30px;
+                margin-top: 20px;
                 
                 &:hover{
                     fill: var(--nav-text-color-white-solid);
@@ -585,7 +584,7 @@
         }
         .bienvenido{           
             font-size: 7rem;
-            margin-top: 75vh;
+            margin-top: 80vh;
         }
     }
     .aboutMe{

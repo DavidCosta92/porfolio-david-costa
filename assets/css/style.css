@@ -187,7 +187,7 @@
 }
 * .presentacion .descripcion {
   font-size: 2.5rem;
-  margin-bottom: 10vh;
+  margin-bottom: 13vh;
   animation: inicial 4s;
 }
 * .presentacion .bienvenido {
@@ -226,14 +226,13 @@
 * .aboutMe .texto1 p {
   padding-top: 12vh;
   color: var(--text-color-white-semi-solid-075);
-  font-size: 4rem;
-  margin-top: -60px;
+  font-size: 3.5rem;
 }
 * .aboutMe .texto2 p {
   color: var(--text-title-color-dark-blue);
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-weight: 500;
-  margin-top: -32px;
+  margin-top: -20px;
 }
 * .aboutMe .texto3 p {
   color: var(--text-title-color-dark-blue);
@@ -279,11 +278,11 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 27vh;
 }
 * .skills p {
-  padding-top: 50px;
   color: var(--text-title-color-light-blue);
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 * .skills .skillsContainer {
@@ -306,7 +305,7 @@
   margin-bottom: 100px;
 }
 * .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--text-color-white-semi-solid-075);
   font-weight: 300;
   padding-top: 5vh;
@@ -342,7 +341,7 @@
 * .skills .aprendiendoContainer .contenedorAprendizajesB .palabraEspecialSoftSkills {
   color: var(--text-title-color-super-light-blue);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 * .proyectos {
   background-color: var(--section-bg-color-2);
@@ -353,10 +352,10 @@
 * .proyectos p {
   padding-top: 50px;
   color: var(--text-color-white-semi-solid-075);
-  font-size: 4rem;
-  margin-bottom: 4vh;
+  font-size: 3.5rem;
   position: relative;
   z-index: 90;
+  line-height: 1em;
 }
 * .proyectos .difuminado {
   top: -25vh;
@@ -459,9 +458,9 @@
   text-align: center;
 }
 * .charlemos p {
-  padding-top: 20vh;
+  padding-top: 10vh;
   color: var(--text-title-color-light-blue);
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 * .charlemos .formulario {
   z-index: 1000;
@@ -524,9 +523,9 @@
 }
 * .charlemos .contacto svg {
   fill: var(--text-color-white-semi-solid-075);
-  height: 50px;
+  height: 45px;
   margin: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 * .charlemos .contacto svg:hover {
   fill: var(--nav-text-color-white-solid);
@@ -573,7 +572,7 @@
   }
   .presentacion .bienvenido {
     font-size: 7rem;
-    margin-top: 75vh;
+    margin-top: 80vh;
   }
   .aboutMe .texto1 p {
     font-size: 5rem;
