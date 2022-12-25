@@ -113,18 +113,22 @@
   animation: inicial 7.5s 1;
 }
 * .navbarContainer ul {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   list-style: none;
-  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  line-height: 0;
 }
 * .navbarContainer ul a {
   text-decoration: none;
 }
 * .navbarContainer ul a li {
-  margin: 12px;
+  margin-top: 12px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   padding: 3px 5px;
   filter: drop-shadow(2px 2px 2px rgb(3, 242, 255));
@@ -138,7 +142,6 @@
   background-color: var(--section-bg-color-1);
   text-align: center;
   height: 100vh;
-  /*padding: 35vh 20px 25vh 20px;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -171,53 +174,82 @@
 }
 * .presentacion .nombre {
   color: var(--text-title-color-light-blue);
-  font-size: 7rem;
+  font-size: 7.5rem;
   margin-top: 100px;
-  margin-bottom: -100px;
   animation: inicial 2.5s;
+  margin-bottom: -40px;
 }
 * .presentacion .apellido {
-  font-size: 5rem;
+  font-size: 5.5rem;
   line-height: 0;
-  margin-bottom: 40px;
+  padding-bottom: 100px;
   animation: inicial 3s;
 }
 * .presentacion .descripcion {
   font-size: 2.5rem;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
   animation: inicial 4s;
+}
+* .presentacion .bienvenido {
+  color: var(--text-color-white-semi-solid-075);
+  font-size: 3rem;
+  position: absolute;
+  margin-top: 75vh;
+  text-align: center;
+  width: 100%;
+  animation: hola 5s 6s;
+  opacity: 0;
+}
+@keyframes bienvenido {
+  from {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 * .aboutMe {
   height: 100vh;
   background-color: var(--section-bg-color-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
-  padding-top: 8vh;
 }
 * .aboutMe .texto1 {
   line-height: 0;
 }
 * .aboutMe .texto1 p {
-  padding-top: 15vh;
+  padding-top: 10vh;
   color: var(--text-color-white-semi-solid-075);
   font-size: 4rem;
-  margin-top: -7vh;
+  margin-top: -60px;
 }
 * .aboutMe .texto2 p {
   color: var(--text-title-color-dark-blue);
   font-size: 6rem;
-  margin-top: -7vh;
   font-weight: 500;
+  margin-top: -32px;
 }
 * .aboutMe .texto3 p {
   color: var(--text-title-color-dark-blue);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
+}
+* .aboutMe .texto3 i {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--hover-bg-color-dark-blue-solid);
 }
 * .aboutMe p {
   color: var(--text-color-white-semi-solid-075);
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 300;
-  padding-top: 4vh;
   margin: 0 30px 1vh;
 }
 * .aboutMe .cv a {
@@ -225,7 +257,7 @@
 }
 * .aboutMe .cv a p {
   color: var(--text-color-white-semi-solid);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   transition: all ease-in 0.3s;
   padding: 2px;
@@ -243,9 +275,13 @@
   background-color: var(--section-bg-color-1);
   padding: 0 20px;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 * .skills p {
-  padding-top: 10vh;
+  padding-top: 50px;
   color: var(--text-title-color-light-blue);
   font-size: 4rem;
   text-align: center;
@@ -254,13 +290,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 5vh;
   border-radius: 20px;
+  max-width: 800px;
+  /* margin: auto;
+   margin-top: 5vh; */
   border: 1px solid var(--text-title-color-light-blue);
 }
 * .skills .skillsContainer img {
   width: 10vw;
   margin: 10px;
+  min-width: 50px;
+  max-width: 100px;
+}
+* .skills .aprendiendoContainer {
+  margin-bottom: 100px;
 }
 * .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
   font-size: 1.5rem;
@@ -304,14 +347,14 @@
 * .proyectos {
   background-color: var(--section-bg-color-2);
   height: 100vh;
-  padding: 0 10px;
+  padding: 0 20px;
   text-align: center;
 }
 * .proyectos p {
-  padding-top: 12vh;
+  padding-top: 50px;
   color: var(--text-color-white-semi-solid-075);
-  font-size: 3rem;
-  margin-bottom: 5vh;
+  font-size: 4rem;
+  margin-bottom: 4vh;
   position: relative;
   z-index: 90;
 }
@@ -354,10 +397,13 @@
   height: 74vh;
   position: relative;
 }
+* .proyectos .proyectosContainer .ih-item.square {
+  height: 250px;
+}
 * .proyectos .proyectosContainer .cardProyect {
   border-radius: 8px;
-  max-width: 400px;
-  margin-bottom: 15px;
+  /*   max-width: 400px; */
+  margin-bottom: 30px;
 }
 * .proyectos .proyectosContainer .cardProyect:hover {
   filter: drop-shadow(0 0 3px var(--bg-color-light-blue-050));
@@ -372,7 +418,7 @@
   justify-content: space-around;
   width: 100%;
   position: absolute;
-  margin-top: 180px;
+  margin-top: 200px;
 }
 * .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input {
   width: 80px;
@@ -396,14 +442,14 @@
   color: white;
   background-color: rgba(12, 34, 52, 0.6);
   font-size: 1.15rem;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   margin-bottom: 0;
   font-weight: 600;
 }
 * .proyectos .proyectosContainer .cardProyect .info #descripcionProyecto {
   color: white;
   background-color: var(--hover-bg-color-dark-blue-050);
-  padding: 5px;
+  padding: 3px;
   font-size: 0.85rem;
 }
 * .charlemos {
@@ -415,11 +461,12 @@
 * .charlemos p {
   padding-top: 20vh;
   color: var(--text-title-color-light-blue);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 * .charlemos .formulario {
   z-index: 1000;
   position: relative;
+  margin-top: 70px;
 }
 * .charlemos .formulario .labelFormContacto {
   display: flex;
@@ -477,7 +524,7 @@
 }
 * .charlemos .contacto svg {
   fill: var(--text-color-white-semi-solid-075);
-  height: 45px;
+  height: 50px;
   margin: 20px;
   margin-top: 30px;
 }
@@ -491,12 +538,210 @@
 }
 
 /* Medias queries  */
+@media (min-width: 800px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .charlemos .formulario .labelFormContacto {
+    width: 450px;
+  }
+  .ih-item.square {
+    width: 40%;
+    max-width: 550px;
+  }
+  .presentacion .hola {
+    margin-top: 10vh;
+    font-size: 8.5rem;
+  }
+  .presentacion .soy {
+    font-size: 5rem;
+    margin-bottom: -10vh;
+    margin-top: 10vh;
+  }
+  .presentacion .nombre {
+    font-size: 9rem;
+    margin-top: 100px;
+    margin-bottom: -80px;
+  }
+  .presentacion .apellido {
+    font-size: 7rem;
+    margin-bottom: 40px;
+  }
+  .presentacion .descripcion {
+    font-size: 3.5rem;
+    margin-bottom: 15vh;
+  }
+  .presentacion .bienvenido {
+    font-size: 7rem;
+    margin-top: 75vh;
+  }
+  .aboutMe .texto1 p {
+    font-size: 5rem;
+  }
+  .aboutMe .texto2 p {
+    font-size: 6.5rem;
+    font-weight: 500;
+    margin-top: -80px;
+  }
+  .aboutMe .texto3 p {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .aboutMe .texto3 i {
+    font-size: 2.75rem;
+    font-weight: 600;
+  }
+  .aboutMe p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-top: 4vh;
+    margin: 0 30px 1vh;
+  }
+  .aboutMe .cv a p {
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2px;
+    margin: 4px;
+    margin-top: 5vh;
+    border-radius: 30px;
+  }
+  .skills p {
+    font-size: 4rem;
+  }
+  .skills .skillsContainer {
+    max-width: 800px;
+  }
+  .skills .skillsContainer img {
+    width: 10vw;
+    margin: 10px;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
+    font-size: 2.3rem;
+    font-weight: 300;
+    padding-top: 5vh;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
+    height: 25vh;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer p {
+    font-size: 2rem;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer .divisor {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 10px;
+    height: 1px;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
+    width: 70%;
+    max-width: 450px;
+    margin-top: 30px;
+    height: 2px;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .palabraEspecialSoftSkills {
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+}
 @media (min-width: 1000px) {
   ::-webkit-scrollbar {
     display: none;
   }
-  .proyectos .scrollProyectos img {
-    display: none;
+  .charlemos .formulario .labelFormContacto {
+    width: 550px;
+  }
+}
+@media (min-width: 1300px) {
+  .skills p {
+    font-size: 7rem;
+  }
+  .skills .skillsContainer {
+    max-width: 1000px;
+  }
+  .skills .skillsContainer img {
+    width: 10vw;
+    margin: 10px;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
+    font-size: 2.6rem;
+    font-weight: 400;
+    padding-top: 4vh;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
+    height: 25vh;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer p {
+    font-size: 2.5rem;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer .divisor {
+    width: 700px;
+    margin-top: 10px;
+    height: 4px;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
+    width: 700px;
+    margin-top: 30px;
+    height: 4px;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .palabraEspecialSoftSkills {
+    font-weight: 500;
+    font-size: 3.2rem;
+  }
+  .aboutMe .texto1 p {
+    font-size: 6rem;
+  }
+  .aboutMe .texto2 p {
+    font-size: 6.5rem;
+    font-weight: 500;
+    margin-top: -80px;
+  }
+  .aboutMe .texto3 p {
+    font-size: 2.75rem;
+    font-weight: 500;
+  }
+  .aboutMe .texto3 i {
+    font-size: 3.25rem;
+    font-weight: 600;
+  }
+  .aboutMe p {
+    font-size: 2.85rem;
+    font-weight: 300;
+    padding-top: 4vh;
+    margin: 0 30px 1vh;
+  }
+  .aboutMe .cv a p {
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 2px;
+    margin: 4px;
+    margin-top: 5vh;
+    border-radius: 30px;
+  }
+  .presentacion .hola {
+    margin-top: 12vh;
+    font-size: 8.5rem;
+  }
+  .presentacion .soy {
+    font-size: 7rem;
+    margin-bottom: -10vh;
+    margin-top: 10vh;
+  }
+  .presentacion .nombre {
+    font-size: 12rem;
+    margin-top: 100px;
+    margin-bottom: -80px;
+  }
+  .presentacion .apellido {
+    font-size: 9rem;
+    margin-bottom: 40px;
+  }
+  .presentacion .descripcion {
+    font-size: 5.5rem;
+    margin-bottom: 15vh;
+  }
+  .presentacion .bienvenido {
+    font-size: 8rem;
+    margin-top: 75vh;
   }
 }
 
