@@ -7,7 +7,7 @@ function enviarMsj(){
     alertaMensajeEnviado.style.display = "block";
     setTimeout(()=>{
         alertaMensajeEnviado.style.display = "none";
-    }, "3000")
+    }, "3s")
 }
 
 

@@ -51,39 +51,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Signika Negative", sans-serif;
-  /*
-  .swipeIcon{
-      position: relative;
-      top: -110px;
-      width: 70px;
-
-      img{    
-          animation-name: swipeIcon;
-          animation-duration: 2s;
-          animation-iteration-count: infinite;
-          width: 60px;
-          animation-direction: alternate;
-          filter:drop-shadow(2px 2px var(--text-title-color-light-blue))
-
-      }        
-      @keyframes swipeIcon {
-      from {
-          transform: rotate(150deg); transform-origin: 0;
-      }
-
-      to {
-          transform: rotate(50deg); transform-origin: 5;
-      }
-      }
-
-  }
-  #proyectos .swipeIcon{
-      top: 100px;
-      z-index: 10;
-      left: calc(100vw - 130px);
-      transform: scaleX(-1);
-  }
-  */
 }
 @keyframes inicial {
   from {
@@ -284,6 +251,9 @@
   color: var(--text-title-color-light-blue);
   font-size: 3.5rem;
   text-align: center;
+}
+* .skills .titulo {
+  margin-top: 10vh;
 }
 * .skills .skillsContainer {
   display: flex;
