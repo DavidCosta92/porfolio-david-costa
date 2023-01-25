@@ -259,8 +259,16 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.021 17.824c-3.907 0-6.021-2.438-6.021-5.586 0-3.363 2.381-6.062 6.638-6.062 3.107 0 5.362 2.019 5.362 4.801 0 4.356-5.165 5.506-4.906 3.021-.354.555-.927 1.177-2.026 1.177-1.257 0-2.04-.92-2.04-2.403 0-2.222 1.461-4.1 3.19-4.1.829 0 1.399.438 1.638 1.11l.232-.816h1.169c-.122.416-1.161 4.264-1.161 4.264-.323 1.333.675 1.356 1.562.648 1.665-1.29 1.75-4.664-.499-6.071-2.411-1.445-7.897-.551-7.897 4.347 0 2.806 1.976 4.691 4.914 4.691 1.719 0 2.771-.465 3.648-.974l.588.849c-.856.482-2.231 1.104-4.391 1.104zm-1.172-7.153c-.357.67-.588 1.538-.588 2.212 0 1.805 1.761 1.816 2.626.12.356-.697.586-1.586.586-2.265 0-1.458-1.748-1.717-2.624-.067z"/></svg></a>
                 <a href="./assets/Cv Costa David IT.pdf" target="_blank" rel="noreferrer" title="Ver Curriculum">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 24h-20v-24h10.189c3.162 0 9.811 7.223 9.811 9.614v14.386zm-10.638-22h-7.362v20h16v-11.543c0-4.107-6-2.457-6-2.457s1.517-6-2.638-6zm.638 12h-5l1-5 1.395 1.744c.76-.467 1.648-.744 2.605-.744 2.76 0 5 2.24 5 5s-2.24 5-5 5c-2.482 0-4.544-1.812-4.934-4.184l1.967-.367c.217 1.443 1.464 2.551 2.967 2.551 1.656 0 3-1.345 3-3s-1.344-3-3-3c-.483 0-.935.123-1.339.326l1.339 1.674z"/></svg></a>
-            </div>
-            <form class="formulario" id="contact-form" action="https://formsubmit.co/c4da5ffe16f2017c6b7b40a809c770c7" method="POST">
+                
+                
+
+
+            
+            
+            
+                </div>
+            <form class="formulario" id="contact-form" action="https://formspree.io/f/mnqyjapy"  method="POST">
+                <!-- => para "FORMSUBMIT" action="https://formsubmit.co/c4da5ffe16f2017c6b7b40a809c770c7"-->
                 <div class="labelFormContacto">
                     <label>Nombre</label>
                     <input type="text" name="name" id="name" required/>
@@ -269,20 +277,17 @@
 
                 <div class="labelFormContacto">
                     <label >Email</label>
-                    <input type="email" name="email" id="email" required/>
+                    <input type="email" name="email" id="email" required replayTo/>
                 </div>
                 <div class="labelFormContacto textArea">
                     <label > ¿Que te gustaria contarme? </label>
                     <textarea type="text" name="mensaje" id="mensaje" required></textarea>                  
                 </div>
+
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="">
-                <input type="submit" class="botonEnvio" value="Send" />
-                
+                <input type="hidden" name="_autoresponse" value="Gracias por comunicarte, en breve estare respondiendo.">
+                <input type="submit" class="botonEnvio" value="Send" />               
             </form>
-            <div class="alert alert-primary" role="alert" id="mensajeEnviado">
-                A simple primary alert—check it out!
-            </div>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

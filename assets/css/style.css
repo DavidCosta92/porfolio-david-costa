@@ -73,7 +73,7 @@
   scroll-snap-align: start;
 }
 * .navbarContainer {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(3, 92, 127, 0.7);
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -501,9 +501,6 @@
   fill: var(--nav-text-color-white-solid);
   transform: scale(1.08);
   filter: drop-shadow(3px 3px 2px var(--text-title-color-light-blue));
-}
-* #mensajeEnviado {
-  display: none;
 }
 
 /* Medias queries  */
