@@ -186,8 +186,7 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  padding: 3vw;
-  padding-top: 5rem;
+  padding: 5rem 3vw;
 }
 * .aboutMe .texto1 {
   line-height: 0;
@@ -249,6 +248,7 @@
   align-items: center;
   /* padding-top: 27vh; */
   padding-top: 6rem;
+  overflow: hidden;
 }
 * .skills p {
   color: var(--text-title-color-light-blue);
@@ -256,7 +256,7 @@
   text-align: center;
 }
 * .skills .titulo {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 * .skills .skillsContainer {
   display: flex;
