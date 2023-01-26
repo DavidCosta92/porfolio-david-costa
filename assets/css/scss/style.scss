@@ -156,7 +156,7 @@
         }
         .bienvenido{
             color: var(--text-color-white-semi-solid-075);            
-            font-size: 3rem;
+            font-size: 2.2rem;
             position: absolute;
             margin-top: 80vh;
             text-align: center;
@@ -182,7 +182,6 @@
         .texto1{
             line-height: 0;
             p{
-                /* padding-top: 12vh; */
                 color: var(--text-color-white-semi-solid-075);
                 font-size: 3.5rem;
             }
@@ -192,7 +191,6 @@
                 color: var(--text-title-color-dark-blue);
                 font-size: 4.5rem;
                 font-weight: 500;
-                /* margin-top: -20px; */
             }
         }
         .texto3 p{
@@ -210,8 +208,6 @@
             color: var(--text-color-white-semi-solid-075);
             font-size: 1.5rem;
             font-weight: 300;
-           
-            /*margin: 0 30px 1vh; */
         }
         .cv{
            a{
@@ -223,7 +219,6 @@
                 transition: all ease-in 0.3s;
                 padding: 7px;
                 margin: 4px;
-                /*margin-top: 5vh; */
                 border-radius: 30px;
                 border: 0 solid rgba(2, 79, 208, 0.2);
                 &:hover{
@@ -244,18 +239,12 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-       /* padding-top: 27vh; */
         padding-top: 6rem;
-        overflow: hidden;
         p{
             color: var(--text-title-color-light-blue);
             font-size: 3.5rem;
             text-align: center;
         }
-        .titulo{
-            /* margin-top: 10vh; */
-        }
-        
         .skillsContainer{
             display: flex;
             flex-wrap: wrap;
@@ -263,8 +252,6 @@
             
             border-radius: 20px;
             max-width: 800px;
-           /* margin: auto;
-            margin-top: 5vh; */
             border: 1px solid var(--text-title-color-light-blue);
             img{
                 width: 10vw;
@@ -281,7 +268,8 @@
                     color: var(--text-color-white-semi-solid-075);
                     font-weight: 300;
                     padding-top: 5vh;
-                }                
+                } 
+                /*               
                 .softContainer {
                     overflow-y: scroll;
                     height: 25vh;                   
@@ -300,6 +288,7 @@
                         box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
                     }
                 }
+                */
                 .divisor2{
                     width: 70%;
                     max-width: 300px;
@@ -444,11 +433,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        .contacto{
-            /*padding-top: 2rem;*/
-        }
         p{
-            /*padding-top: 10vh;*/
             color: var(--text-title-color-light-blue);
             font-size: 3.5rem;
         }
@@ -525,9 +510,6 @@
                 }
             }
         }
-
-
-
     }
 }
 
@@ -573,30 +555,34 @@
         }
     }
     .aboutMe{
+        
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+            
         .texto1{
             p{
-                font-size: 5rem;
+                font-size: 4.5rem;
             }
         }
         .texto2{
             p{
-                font-size: 6.5rem;
+                font-size: 6rem;
                 font-weight: 500;
                 margin-top: -80px;
             }
         }
         .texto3 p{
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 500;
         }
         .texto3 i{
-            font-size: 2.75rem;
+            font-size: 2.5rem;
             font-weight: 600;
         }
         p{
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 300;
-            padding-top: 4vh;
+            padding-top: 3vh;
             margin: 0 30px 1vh;
         }
         .cv{
@@ -614,6 +600,7 @@
         }
     }
     .skills{
+        padding-top: 20rem;
         p{
             font-size: 4rem;
         }
@@ -631,7 +618,8 @@
                     font-size: 2.3rem;
                     font-weight: 300;
                     padding-top: 5vh;
-                }                
+                }    
+                /*            
                 .softContainer {
                     height: 25vh;                   
                     p{
@@ -643,7 +631,7 @@
                         margin-top: 10px;
                         height: 1px;
                     }
-                }
+                }*/
                 .divisor2{
                     width: 70%;
                     max-width: 450px;
@@ -663,12 +651,78 @@
     ::-webkit-scrollbar {
         display: none;
      }
-     .charlemos .formulario .labelFormContacto{
-           width: 550px;
+     .cardProyect{
+        .info{
+            #descripcionProyecto{
+                font-size: 1rem;
+                line-height: normal;
+            }
+        }
+    }
+    .charlemos{
+        p{
+            font-size: 3.5rem;
+        }
+        .formulario{
+            margin-top: 70px;
+            .labelFormContacto{
+                width: 550px;
+                margin-bottom: 20px;
+                label{
+                    margin-bottom: 8px;
+                    font-size: 1.15rem;
+                    margin-bottom: 4px;
+                }
+                input{
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    font-size: 1.5rem;
+                }
+            }
+            textarea{
+                border-radius: 10px;
+                min-height: 70px;
+            }
+            .botonEnvio{
+                border-radius: 20px;
+                padding: 2px;
+                margin-top: 5px;
+                height: 40px;
+                font-size: 1.15rem;
+            }
+        }
+        .contacto{
+            svg{
+                height: 55px;
+                margin: 20px;
+                margin-top: 20px;
+            }
+        }
     }
 }
 
 @media (min-width: 1300px){
+    .proyectos{
+        .proyectosContainer{
+            .cardProyect{
+                .info{
+                    .botoneraProyecto{
+                        input{                    
+                            font-size: 1.1rem;
+                        }
+                    }
+                    #tituloProyecto{
+                        font-size: 1.3rem;
+                    }
+                    #descripcionProyecto{
+                        font-size: 1.1rem;
+                    }
+                }
+                
+            }
+        }
+    }
     .skills{
         p{
             font-size: 7rem;
@@ -687,7 +741,8 @@
                     font-size: 2.6rem;
                     font-weight: 400;
                     padding-top: 4vh;
-                }                
+                }        
+                /*        
                 .softContainer {
                     height: 25vh;                   
                     p{
@@ -699,6 +754,7 @@
                         height: 4px;
                     }
                 }
+                */
                 .divisor2{
                     width: 700px;
                     margin-top: 30px;
@@ -772,14 +828,42 @@
             margin-bottom: 40px;
         }
         .descripcion{
-            font-size: 5.5rem;
-            margin-bottom: 15vh;
+            font-size: 4.5rem;
+            margin-bottom: 18vh;
         }
         .bienvenido{           
-            font-size: 8rem;
-            margin-top: 75vh;
+            font-size: 6.5rem;
+            margin-top: 85vh;
         }
     }
+}
+
+@media (min-width: 1500px){
+    .proyectos{
+        .proyectosContainer{
+            .ih-item.square{
+                height: 400px;
+            }
+            .cardProyect{
+                .info{
+                    .botoneraProyecto{
+                        input{                    
+                            font-size: 1.1rem;
+                            margin-top: 150px;
+                        }
+                    }
+                    #tituloProyecto{
+                        font-size: 1.5rem;
+                    }
+                    #descripcionProyecto{
+                        font-size: 1.3rem;
+                    }
+                }
+                
+            }
+        }
+    }
+
 }
 
 

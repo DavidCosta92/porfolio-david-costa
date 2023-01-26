@@ -164,7 +164,7 @@
 }
 * .presentacion .bienvenido {
   color: var(--text-color-white-semi-solid-075);
-  font-size: 3rem;
+  font-size: 2.2rem;
   position: absolute;
   margin-top: 80vh;
   text-align: center;
@@ -197,7 +197,6 @@
   line-height: 0;
 }
 * .aboutMe .texto1 p {
-  /* padding-top: 12vh; */
   color: var(--text-color-white-semi-solid-075);
   font-size: 3.5rem;
 }
@@ -205,7 +204,6 @@
   color: var(--text-title-color-dark-blue);
   font-size: 4.5rem;
   font-weight: 500;
-  /* margin-top: -20px; */
 }
 * .aboutMe .texto3 p {
   color: var(--text-title-color-dark-blue);
@@ -222,7 +220,6 @@
   color: var(--text-color-white-semi-solid-075);
   font-size: 1.5rem;
   font-weight: 300;
-  /*margin: 0 30px 1vh; */
 }
 * .aboutMe .cv a {
   text-decoration: none;
@@ -234,7 +231,6 @@
   transition: all ease-in 0.3s;
   padding: 7px;
   margin: 4px;
-  /*margin-top: 5vh; */
   border-radius: 30px;
   border: 0 solid rgba(2, 79, 208, 0.2);
 }
@@ -251,17 +247,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* padding-top: 27vh; */
   padding-top: 6rem;
-  overflow: hidden;
 }
 * .skills p {
   color: var(--text-title-color-light-blue);
   font-size: 3.5rem;
   text-align: center;
-}
-* .skills .titulo {
-  /* margin-top: 10vh; */
 }
 * .skills .skillsContainer {
   display: flex;
@@ -269,8 +260,6 @@
   justify-content: space-around;
   border-radius: 20px;
   max-width: 800px;
-  /* margin: auto;
-   margin-top: 5vh; */
   border: 1px solid var(--text-title-color-light-blue);
 }
 * .skills .skillsContainer img {
@@ -282,29 +271,33 @@
 * .skills .aprendiendoContainer {
   margin-bottom: 100px;
 }
+* .skills .aprendiendoContainer .contenedorAprendizajesB {
+  /*               
+  .softContainer {
+      overflow-y: scroll;
+      height: 25vh;                   
+      p{
+          font-size: 2rem;
+          color: var(--text-color-white-semi-solid-075);
+      }
+      .divisor{
+          width: 90%;
+          max-width: 300px;
+          border-radius: 1px;
+          margin: auto;
+          margin-top: 10px;
+          height: 1px;
+          background-color: var(--text-title-color-light-blue);
+          box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
+      }
+  }
+  */
+}
 * .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
   font-size: 1.25rem;
   color: var(--text-color-white-semi-solid-075);
   font-weight: 300;
   padding-top: 5vh;
-}
-* .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
-  overflow-y: scroll;
-  height: 25vh;
-}
-* .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer p {
-  font-size: 2rem;
-  color: var(--text-color-white-semi-solid-075);
-}
-* .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer .divisor {
-  width: 90%;
-  max-width: 300px;
-  border-radius: 1px;
-  margin: auto;
-  margin-top: 10px;
-  height: 1px;
-  background-color: var(--text-title-color-light-blue);
-  box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
 }
 * .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
   width: 70%;
@@ -440,11 +433,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
-* .charlemos .contacto {
-  /*padding-top: 2rem;*/
-}
 * .charlemos p {
-  /*padding-top: 10vh;*/
   color: var(--text-title-color-light-blue);
   font-size: 3.5rem;
 }
@@ -557,26 +546,30 @@
     font-size: 7rem;
     margin-top: 80vh;
   }
+  .aboutMe {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+  }
   .aboutMe .texto1 p {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .aboutMe .texto2 p {
-    font-size: 6.5rem;
+    font-size: 6rem;
     font-weight: 500;
     margin-top: -80px;
   }
   .aboutMe .texto3 p {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 500;
   }
   .aboutMe .texto3 i {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
   .aboutMe p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
-    padding-top: 4vh;
+    padding-top: 3vh;
     margin: 0 30px 1vh;
   }
   .aboutMe .cv a p {
@@ -586,6 +579,9 @@
     margin: 4px;
     margin-top: 5vh;
     border-radius: 30px;
+  }
+  .skills {
+    padding-top: 20rem;
   }
   .skills p {
     font-size: 4rem;
@@ -597,22 +593,25 @@
     width: 10vw;
     margin: 10px;
   }
+  .skills .aprendiendoContainer .contenedorAprendizajesB {
+    /*            
+    .softContainer {
+        height: 25vh;                   
+        p{
+            font-size: 2rem;
+        }
+        .divisor{
+            width: 90%;
+            max-width: 300px;
+            margin-top: 10px;
+            height: 1px;
+        }
+    }*/
+  }
   .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
     font-size: 2.3rem;
     font-weight: 300;
     padding-top: 5vh;
-  }
-  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
-    height: 25vh;
-  }
-  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer p {
-    font-size: 2rem;
-  }
-  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer .divisor {
-    width: 90%;
-    max-width: 300px;
-    margin-top: 10px;
-    height: 1px;
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
     width: 70%;
@@ -629,11 +628,58 @@
   ::-webkit-scrollbar {
     display: none;
   }
+  .cardProyect .info #descripcionProyecto {
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .charlemos p {
+    font-size: 3.5rem;
+  }
+  .charlemos .formulario {
+    margin-top: 70px;
+  }
   .charlemos .formulario .labelFormContacto {
     width: 550px;
+    margin-bottom: 20px;
+  }
+  .charlemos .formulario .labelFormContacto label {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+  }
+  .charlemos .formulario .labelFormContacto input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 1.5rem;
+  }
+  .charlemos .formulario textarea {
+    border-radius: 10px;
+    min-height: 70px;
+  }
+  .charlemos .formulario .botonEnvio {
+    border-radius: 20px;
+    padding: 2px;
+    margin-top: 5px;
+    height: 40px;
+    font-size: 1.15rem;
+  }
+  .charlemos .contacto svg {
+    height: 55px;
+    margin: 20px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1300px) {
+  .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input {
+    font-size: 1.1rem;
+  }
+  .proyectos .proyectosContainer .cardProyect .info #tituloProyecto {
+    font-size: 1.3rem;
+  }
+  .proyectos .proyectosContainer .cardProyect .info #descripcionProyecto {
+    font-size: 1.1rem;
+  }
   .skills p {
     font-size: 7rem;
   }
@@ -644,21 +690,25 @@
     width: 10vw;
     margin: 10px;
   }
+  .skills .aprendiendoContainer .contenedorAprendizajesB {
+    /*        
+    .softContainer {
+        height: 25vh;                   
+        p{
+            font-size: 2.5rem;
+        }
+        .divisor{
+            width: 700px;
+            margin-top: 10px;
+            height: 4px;
+        }
+    }
+    */
+  }
   .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
     font-size: 2.6rem;
     font-weight: 400;
     padding-top: 4vh;
-  }
-  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer {
-    height: 25vh;
-  }
-  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer p {
-    font-size: 2.5rem;
-  }
-  .skills .aprendiendoContainer .contenedorAprendizajesB .softContainer .divisor {
-    width: 700px;
-    margin-top: 10px;
-    height: 4px;
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
     width: 700px;
@@ -718,12 +768,27 @@
     margin-bottom: 40px;
   }
   .presentacion .descripcion {
-    font-size: 5.5rem;
-    margin-bottom: 15vh;
+    font-size: 4.5rem;
+    margin-bottom: 18vh;
   }
   .presentacion .bienvenido {
-    font-size: 8rem;
-    margin-top: 75vh;
+    font-size: 6.5rem;
+    margin-top: 85vh;
+  }
+}
+@media (min-width: 1500px) {
+  .proyectos .proyectosContainer .ih-item.square {
+    height: 400px;
+  }
+  .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input {
+    font-size: 1.1rem;
+    margin-top: 150px;
+  }
+  .proyectos .proyectosContainer .cardProyect .info #tituloProyecto {
+    font-size: 1.5rem;
+  }
+  .proyectos .proyectosContainer .cardProyect .info #descripcionProyecto {
+    font-size: 1.3rem;
   }
 }
 

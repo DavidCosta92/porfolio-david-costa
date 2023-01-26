@@ -1,8 +1,8 @@
-
-
-
-
-
+let presentacion = document.getElementsByClassName('presentacion')[0]
+let bienvenido = document.getElementsByClassName('bienvenido')[0]
+setTimeout(() => {
+    presentacion.removeChild(bienvenido)
+  }, 8500)
 
 /*
 import tinyTypewriter from 'tiny-typewriter/src/';
