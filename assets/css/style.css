@@ -105,6 +105,11 @@
   color: var(--nav-text-color-white-solid);
   font-weight: 500;
 }
+* .navbarContainer ul a li .active {
+  text-decoration: underline 3px var(--text-title-color-light-blue);
+  color: var(--nav-text-color-white-solid);
+  font-weight: 500;
+}
 * .presentacion {
   background-color: var(--section-bg-color-1);
   text-align: center;
@@ -161,7 +166,7 @@
   color: var(--text-color-white-semi-solid-075);
   font-size: 3rem;
   position: absolute;
-  margin-top: 75vh;
+  margin-top: 80vh;
   text-align: center;
   width: 100%;
   animation: hola 5s 6s;
