@@ -186,12 +186,14 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  padding: 3vw;
+  padding-top: 5rem;
 }
 * .aboutMe .texto1 {
   line-height: 0;
 }
 * .aboutMe .texto1 p {
-  padding-top: 12vh;
+  /* padding-top: 12vh; */
   color: var(--text-color-white-semi-solid-075);
   font-size: 3.5rem;
 }
@@ -199,7 +201,7 @@
   color: var(--text-title-color-dark-blue);
   font-size: 4.5rem;
   font-weight: 500;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 * .aboutMe .texto3 p {
   color: var(--text-title-color-dark-blue);
@@ -216,7 +218,7 @@
   color: var(--text-color-white-semi-solid-075);
   font-size: 1.5rem;
   font-weight: 300;
-  margin: 0 30px 1vh;
+  /*margin: 0 30px 1vh; */
 }
 * .aboutMe .cv a {
   text-decoration: none;
@@ -228,7 +230,7 @@
   transition: all ease-in 0.3s;
   padding: 7px;
   margin: 4px;
-  margin-top: 5vh;
+  /*margin-top: 5vh; */
   border-radius: 30px;
   border: 0 solid rgba(2, 79, 208, 0.2);
 }
@@ -245,7 +247,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 27vh;
+  /* padding-top: 27vh; */
+  padding-top: 6rem;
 }
 * .skills p {
   color: var(--text-title-color-light-blue);
@@ -426,9 +429,17 @@
   height: 100vh;
   padding: 0 10px;
   text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+* .charlemos .contacto {
+  /*padding-top: 2rem;*/
 }
 * .charlemos p {
-  padding-top: 10vh;
+  /*padding-top: 10vh;*/
   color: var(--text-title-color-light-blue);
   font-size: 3.5rem;
 }
