@@ -101,7 +101,7 @@
   filter: drop-shadow(2px 2px 2px rgb(3, 242, 255));
 }
 * .navbarContainer ul a li:hover {
-  text-decoration: underline 3px var(--text-title-color-light-blue);
+  text-decoration: underline 1px var(--text-title-color-light-blue);
   color: var(--nav-text-color-white-solid);
   font-weight: 500;
 }
@@ -231,12 +231,25 @@
   transition: all ease-in 0.3s;
   padding: 7px;
   margin: 4px;
-  border-radius: 30px;
-  border: 0 solid rgba(2, 79, 208, 0.2);
+  display: inline-block;
+  position: relative;
 }
-* .aboutMe .cv a p:hover {
+* .aboutMe .cv a p:after {
+  content: "";
+  width: 70%;
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  left: 15%;
+  background-color: var(--text-title-color-light-blue);
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+* .aboutMe .cv a p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
   color: var(--nav-text-color-white-solid);
-  background-color: var(--hover-bg-color-dark-blue-075);
 }
 * .skills {
   height: 100vh;
@@ -496,13 +509,13 @@
   font-weight: 600;
   box-shadow: 1px 1px 1px rgb(170, 169, 169);
 }
-* .charlemos .contacto svg {
+* .charlemos .contacto svg, * .charlemos .contacto img {
   fill: var(--text-color-white-semi-solid-075);
   height: 45px;
   margin: 20px;
   margin-top: 20px;
 }
-* .charlemos .contacto svg:hover {
+* .charlemos .contacto svg:hover, * .charlemos .contacto img:hover {
   fill: var(--nav-text-color-white-solid);
   transform: scale(1.08);
   filter: drop-shadow(3px 3px 2px var(--text-title-color-light-blue));
@@ -664,7 +677,7 @@
     height: 40px;
     font-size: 1.15rem;
   }
-  .charlemos .contacto svg {
+  .charlemos .contacto svg, .charlemos .contacto img {
     height: 55px;
     margin: 20px;
     margin-top: 20px;
