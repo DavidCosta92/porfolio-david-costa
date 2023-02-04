@@ -19,6 +19,7 @@
   --text-color-grey-semi-solid:rgba(202, 202, 202, 0.5);
   --nav-bg-color:rgb(1, 39, 54);
   --nav-bg-color:rgb(1, 39, 54);
+  background-color: var(--text-title-color-light-blue);
 }
 
 ::-webkit-scrollbar {
@@ -118,6 +119,7 @@
   flex-direction: column;
   justify-content: space-around;
   color: var(--text-color-grey-semi-solid);
+  margin-bottom: 1px;
 }
 * .presentacion .hola {
   color: var(--text-color-white-semi-solid-075);
@@ -193,14 +195,14 @@
   text-align: center;
   padding: 5rem 3vw;
 }
-* .aboutMe .texto1 {
-  line-height: 0;
-}
-* .aboutMe .texto1 p {
+* .aboutMe div .texto1 p {
   color: var(--text-color-white-semi-solid-075);
   font-size: 3.5rem;
 }
-* .aboutMe .texto2 p {
+* .aboutMe div .texto2 {
+  margin-top: -1rem;
+}
+* .aboutMe div .texto2 p {
   color: var(--text-title-color-dark-blue);
   font-size: 4.5rem;
   font-weight: 500;
@@ -252,7 +254,7 @@
   color: var(--nav-text-color-white-solid);
 }
 * .skills {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--section-bg-color-1);
   padding: 0 20px;
   overflow: scroll;
@@ -264,7 +266,7 @@
 }
 * .skills p {
   color: var(--text-title-color-light-blue);
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 * .skills .skillsContainer {
@@ -276,35 +278,13 @@
   border: 1px solid var(--text-title-color-light-blue);
 }
 * .skills .skillsContainer img {
-  width: 10vw;
+  width: 40px;
   margin: 10px;
   min-width: 50px;
   max-width: 100px;
 }
 * .skills .aprendiendoContainer {
   margin-bottom: 100px;
-}
-* .skills .aprendiendoContainer .contenedorAprendizajesB {
-  /*               
-  .softContainer {
-      overflow-y: scroll;
-      height: 25vh;                   
-      p{
-          font-size: 2rem;
-          color: var(--text-color-white-semi-solid-075);
-      }
-      .divisor{
-          width: 90%;
-          max-width: 300px;
-          border-radius: 1px;
-          margin: auto;
-          margin-top: 10px;
-          height: 1px;
-          background-color: var(--text-title-color-light-blue);
-          box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
-      }
-  }
-  */
 }
 * .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
   font-size: 1.25rem;
@@ -334,7 +314,8 @@
   text-align: center;
 }
 * .proyectos p {
-  padding-top: 50px;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
   color: var(--text-color-white-semi-solid-075);
   font-size: 2.75rem;
   position: relative;
@@ -522,6 +503,64 @@
 }
 
 /* Medias queries  */
+@media (max-height: 650px) {
+  .presentacion .soy {
+    font-size: 3rem;
+  }
+  .presentacion .apellido {
+    font-size: 5.5rem;
+  }
+  .presentacion .apellido {
+    font-size: 4.5rem;
+  }
+  .presentacion .descripcion {
+    font-size: 2rem;
+  }
+  .presentacion .bienvenido {
+    font-size: 2rem;
+  }
+  .aboutMe p {
+    font-size: 1.1rem;
+  }
+  .aboutMe .texto1 p {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  .aboutMe .texto2 p {
+    margin-top: -3rem;
+    font-size: 2.5rem;
+  }
+  .aboutMe .texto3 p {
+    font-size: 1.1rem;
+  }
+  .aboutMe .cv a p {
+    font-size: 1.6rem;
+  }
+  .skills p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .charlemos p {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  .charlemos .formulario {
+    margin-top: 40px;
+  }
+  .charlemos .formulario .labelFormContacto {
+    width: 90%;
+  }
+  .charlemos .formulario .botonEnvio {
+    width: 75%;
+    max-width: 350px;
+  }
+  .charlemos .contacto svg, .charlemos .contacto img {
+    height: 35px;
+    margin: 15px;
+  }
+}
+/* Medias queries  */
 @media (min-width: 800px) {
   ::-webkit-scrollbar {
     display: none;
@@ -594,7 +633,7 @@
     border-radius: 30px;
   }
   .skills {
-    padding-top: 20rem;
+    padding-top: 5rem;
   }
   .skills p {
     font-size: 4rem;

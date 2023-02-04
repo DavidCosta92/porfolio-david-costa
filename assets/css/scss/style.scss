@@ -26,6 +26,9 @@
 
     --nav-bg-color:rgb(1, 39, 54);
     --nav-bg-color:rgb(1, 39, 54);
+    
+    background-color: var(--text-title-color-light-blue);
+    
 }
 ::-webkit-scrollbar {
     display: none; 
@@ -48,6 +51,7 @@
     border: 1px solid var(--text-title-color-light-blue);
   }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -58,6 +62,7 @@
         90%{opacity: 0; }
         to { opacity: 1; }
     }
+
     .snapScrollWrapper {
         scroll-behavior: smooth;
         height: 100vh;
@@ -115,6 +120,7 @@
         flex-direction: column;
         justify-content: space-around;
         color: var(--text-color-grey-semi-solid);
+        margin-bottom: 1px;
         .hola{            
             color: var(--text-color-white-semi-solid-075);
             margin-top: 10vh;            
@@ -179,20 +185,23 @@
         align-items: center;
         text-align: center;
         padding:5rem 3vw;
-        .texto1{
-            line-height: 0;
-            p{
-                color: var(--text-color-white-semi-solid-075);
-                font-size: 3.5rem;
+        div{
+            .texto1{
+                p{
+                    color: var(--text-color-white-semi-solid-075);
+                    font-size: 3.5rem;
+                }
+            }
+            .texto2{
+                margin-top: -1rem;
+                p{
+                    color: var(--text-title-color-dark-blue);
+                    font-size: 4.5rem;
+                    font-weight: 500;
+                }
             }
         }
-        .texto2{
-            p{
-                color: var(--text-title-color-dark-blue);
-                font-size: 4.5rem;
-                font-weight: 500;
-            }
-        }
+
         .texto3 p{
             color: var(--text-title-color-dark-blue);
             font-size: 1.5rem;
@@ -246,7 +255,7 @@
         }
     }
     .skills{
-        height: 100vh;
+        min-height: 100vh;
         background-color: var(--section-bg-color-1);
         padding: 0 20px;
         overflow: scroll;
@@ -257,7 +266,7 @@
         padding-top: 6rem;
         p{
             color: var(--text-title-color-light-blue);
-            font-size: 3.5rem;
+            font-size: 3rem;
             text-align: center;
         }
         .skillsContainer{
@@ -269,7 +278,7 @@
             max-width: 800px;
             border: 1px solid var(--text-title-color-light-blue);
             img{
-                width: 10vw;
+                width: 40px;
                 margin: 10px;
                 min-width: 50px;
                 max-width: 100px;
@@ -284,26 +293,6 @@
                     font-weight: 300;
                     padding-top: 5vh;
                 } 
-                /*               
-                .softContainer {
-                    overflow-y: scroll;
-                    height: 25vh;                   
-                    p{
-                        font-size: 2rem;
-                        color: var(--text-color-white-semi-solid-075);
-                    }
-                    .divisor{
-                        width: 90%;
-                        max-width: 300px;
-                        border-radius: 1px;
-                        margin: auto;
-                        margin-top: 10px;
-                        height: 1px;
-                        background-color: var(--text-title-color-light-blue);
-                        box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
-                    }
-                }
-                */
                 .divisor2{
                     width: 70%;
                     max-width: 300px;
@@ -328,7 +317,8 @@
         padding: 0 20px;
         text-align: center;
         p{
-            padding-top: 50px;
+            padding-top: 5rem;
+            padding-bottom: 1rem;
             color: var(--text-color-white-semi-solid-075);
             font-size: 2.75rem;
             position: relative;
@@ -529,6 +519,81 @@
 }
 
 /* Medias queries  */
+@media (max-height: 650px){
+    .presentacion{
+        .soy{
+            font-size: 3rem;
+        }
+        .apellido{
+            font-size: 5.5rem;
+        }
+        .apellido{
+            font-size: 4.5rem;
+        }
+        .descripcion{
+            font-size: 2rem;
+        }
+        .bienvenido{
+            font-size: 2rem;
+        }
+    }
+    .aboutMe{
+        p{
+            font-size: 1.1rem;
+        }
+        .texto1 p{
+            padding-top: 1rem;
+            font-size: 2rem;
+        }
+        .texto2 p{
+            margin-top: -3rem;
+            font-size: 2.5rem;
+        }
+        .texto3 p{
+            font-size: 1.1rem;
+        }
+        .cv a p{
+            font-size: 1.6rem;
+        }
+    }
+    .skills{
+        p{
+            font-size: 2rem;
+        }
+        .skillsContainer{
+            
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .charlemos{
+        p{
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+        .formulario{
+            margin-top: 40px;
+            .labelFormContacto{
+                width: 90%;
+            }
+            .botonEnvio{
+                width: 75%;
+                max-width: 350px;
+            }
+        }
+        .contacto{
+            svg,img{
+                height: 35px;
+                margin: 15px;
+            }
+        }
+    }
+    
+}
+
+
+/* Medias queries  */
 @media (min-width: 800px){
     ::-webkit-scrollbar {
         display: none;
@@ -615,7 +680,7 @@
         }
     }
     .skills{
-        padding-top: 20rem;
+        padding-top: 5rem;
         p{
             font-size: 4rem;
         }
