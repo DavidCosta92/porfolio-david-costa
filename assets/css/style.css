@@ -107,7 +107,7 @@
   font-weight: 500;
 }
 * .navbarContainer ul a li .active {
-  text-decoration: underline 3px var(--text-title-color-light-blue);
+  text-decoration: underline 2px var(--text-title-color-light-blue);
   color: var(--nav-text-color-white-solid);
   font-weight: 500;
 }
@@ -645,21 +645,6 @@
     width: 10vw;
     margin: 10px;
   }
-  .skills .aprendiendoContainer .contenedorAprendizajesB {
-    /*            
-    .softContainer {
-        height: 25vh;                   
-        p{
-            font-size: 2rem;
-        }
-        .divisor{
-            width: 90%;
-            max-width: 300px;
-            margin-top: 10px;
-            height: 1px;
-        }
-    }*/
-  }
   .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
     font-size: 2.3rem;
     font-weight: 300;
@@ -722,7 +707,17 @@
     margin-top: 20px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
+  .navbarContainer ul {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  .navbarContainer ul a li {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 3px 5px;
+  }
   .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input {
     font-size: 1.1rem;
   }
