@@ -74,13 +74,19 @@
   scroll-snap-align: start;
 }
 * .navbarContainer {
-  background-color: rgba(3, 92, 127, 0.7);
-  position: fixed;
   width: 100%;
   z-index: 100;
   animation: inicial 7.5s 1;
+  /*
+  position: sticky;
+  top: 95vh; 
+  height: 0;
+  */
+  background-color: rgba(3, 92, 127, 0.7);
+  position: fixed;
 }
 * .navbarContainer ul {
+  height: 4vh;
   margin: 0;
   padding: 0;
   display: flex;
