@@ -288,11 +288,17 @@
             border-radius: 20px;
             max-width: 800px;
             border: 1px solid var(--text-title-color-light-blue);
-            img{
+            img{ 
                 width: 40px;
                 margin: 10px;
                 min-width: 50px;
                 max-width: 100px;
+                filter: drop-shadow(0px 0px 2px rgb(3, 242, 255));
+            }
+            .skill-text{
+                font-size: 1.25rem;
+                color: var(--text-color-grey-semi-solid);
+                filter: drop-shadow(0px 0px 2px rgb(3, 242, 255));
             }
         }
         .aprendiendoContainer{    
