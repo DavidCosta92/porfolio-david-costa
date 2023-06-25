@@ -283,6 +283,13 @@
   max-width: 800px;
   border: 1px solid var(--text-title-color-light-blue);
 }
+* .skills .skillsContainer .skill {
+  padding: 15px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 * .skills .skillsContainer img {
   width: 40px;
   margin: 10px;
@@ -837,11 +844,13 @@
 }
 @media (min-width: 1500px) {
   .proyectos .proyectosContainer .ih-item.square {
-    height: 400px;
+    height: 350px;
+  }
+  .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto {
+    margin-top: 300px;
   }
   .proyectos .proyectosContainer .cardProyect .info .botoneraProyecto input {
     font-size: 1.1rem;
-    margin-top: 150px;
   }
   .proyectos .proyectosContainer .cardProyect .info #tituloProyecto {
     font-size: 1.5rem;

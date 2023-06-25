@@ -288,6 +288,13 @@
             border-radius: 20px;
             max-width: 800px;
             border: 1px solid var(--text-title-color-light-blue);
+            .skill{
+                padding: 15px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
             img{ 
                 width: 40px;
                 margin: 10px;
@@ -937,14 +944,14 @@
     .proyectos{
         .proyectosContainer{
             .ih-item.square{
-                height: 400px;
+                height: 350px;
             }
             .cardProyect{
                 .info{
                     .botoneraProyecto{
+                        margin-top: 300px;
                         input{                    
                             font-size: 1.1rem;
-                            margin-top: 150px;
                         }
                     }
                     #tituloProyecto{
