@@ -202,15 +202,9 @@
 }
 * .aboutMe div .texto1 p {
   color: var(--text-color-white-semi-solid-075);
-  font-size: 3.5rem;
-}
-* .aboutMe div .texto2 {
-  margin-top: -1rem;
 }
 * .aboutMe div .texto2 p {
   color: var(--text-title-color-dark-blue);
-  font-size: 4.5rem;
-  font-weight: 500;
 }
 * .aboutMe .texto3 p {
   color: var(--text-title-color-dark-blue);
@@ -283,11 +277,12 @@
   border: 1px solid var(--text-title-color-light-blue);
 }
 * .skills .skillsContainer .skill {
-  padding: 15px;
-  height: 200px;
+  padding: 10px;
+  height: 135px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 * .skills .skillsContainer .skill:hover {
   transform: scale(1.04);
@@ -300,7 +295,7 @@
   filter: drop-shadow(0px 0px 2px rgb(3, 242, 255));
 }
 * .skills .skillsContainer .skill-text {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: var(--text-color-grey-semi-solid);
   filter: drop-shadow(0px 0px 1px rgb(3, 242, 255));
 }
@@ -425,7 +420,7 @@
 }
 * .proyectos .proyectosContainer .cardProyect .info #tituloProyecto {
   color: white;
-  background-color: rgba(12, 34, 52, 0.6);
+  background-color: rgba(12, 34, 52, 0.85);
   font-size: 1.15rem;
   padding-bottom: 3px;
   margin-bottom: 0;
@@ -433,7 +428,7 @@
 }
 * .proyectos .proyectosContainer .cardProyect .info #descripcionProyecto {
   color: white;
-  background-color: var(--hover-bg-color-dark-blue-050);
+  background-color: var(--hover-bg-color-dark-blue-075);
   padding: 3px;
   font-size: 0.85rem;
 }
@@ -580,6 +575,18 @@
     height: 35px;
     margin: 15px;
   }
+  .aboutMe div .texto1 p {
+    color: var(--text-color-white-semi-solid-075);
+    font-size: 3rem;
+  }
+  .aboutMe div .texto2 {
+    margin-top: -5rem;
+  }
+  .aboutMe div .texto2 p {
+    color: var(--text-title-color-dark-blue);
+    font-size: 5rem;
+    font-weight: 500;
+  }
 }
 /* Medias queries  */
 @media (min-width: 800px) {
@@ -626,8 +633,11 @@
   .aboutMe .texto1 p {
     font-size: 4.5rem;
   }
+  .aboutMe .texto2 {
+    margin-top: -9rem;
+  }
   .aboutMe .texto2 p {
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 500;
     margin-top: -80px;
   }
@@ -665,6 +675,21 @@
   .skills .skillsContainer img {
     width: 10vw;
     margin: 10px;
+  }
+  .skills .skillsContainer .skill {
+    padding: 15px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .skills .skillsContainer .skill:hover {
+    transform: scale(1.04);
+  }
+  .skills .skillsContainer .skill-text {
+    font-size: 1.35rem;
+    color: var(--text-color-grey-semi-solid);
+    filter: drop-shadow(0px 0px 1px rgb(3, 242, 255));
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
     font-size: 2.3rem;
@@ -759,6 +784,10 @@
     margin: 10px;
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    max-width: 80%;
     /*        
     .softContainer {
         height: 25vh;                   
@@ -788,12 +817,14 @@
     font-size: 3.2rem;
   }
   .aboutMe .texto1 p {
-    font-size: 6rem;
+    font-size: 5.5rem;
+  }
+  .aboutMe .texto2 {
+    margin-top: -10rem;
   }
   .aboutMe .texto2 p {
-    font-size: 6.5rem;
+    font-size: 7.5rem;
     font-weight: 500;
-    margin-top: -80px;
   }
   .aboutMe .texto3 p {
     font-size: 2.75rem;
@@ -859,6 +890,7 @@
   }
   .proyectos .proyectosContainer .cardProyect .info #descripcionProyecto {
     font-size: 1.3rem;
+    font-weight: 300;
   }
 }
 
