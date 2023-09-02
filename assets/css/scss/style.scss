@@ -215,6 +215,9 @@
             font-size: 1.5rem;
             font-weight: 500;
         }
+        p.texto4{            
+            font-size: 1.5rem;
+        }
         .texto3 i{
             font-size: 1.75rem;
             font-style:italic;
@@ -677,7 +680,7 @@
     }
     .aboutMe{
         
-        padding-top: 20vh;
+        // padding-top: 20vh;
         padding-bottom: 10vh;
             
         .texto1{
@@ -924,15 +927,18 @@
             }
         }
         .texto3 p{
-            font-size: 2.75rem;
-            font-weight: 500;
+            font-size: 2.5rem;
+            font-weight: 600;
         }
         .texto3 i{
             font-size: 3.25rem;
             font-weight: 600;
         }
+        p.texto4{
+            font-size: 2rem;
+        }
         p{
-            font-size: 2.85rem;
+            font-size: 2.25rem;
             font-weight: 300;
             padding-top: 4vh;
             margin: 0 30px 1vh;
