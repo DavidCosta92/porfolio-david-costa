@@ -1,86 +1,110 @@
-
-
-/* primero un poco de CSS muy básico */
-
 body {
     font-family: sans-serif;
     overflow-x: hidden; /* para que nada sobresalga en horizontal */
 }
 
-.wrapper {
-max-width: 1000px;
-margin: 0 auto;
-padding: 32px;
+
+[data-animation="fade"]{
+    opacity: 0;
+    transform: translate(100%);
+    transition: all ease-in 5s 0.1s;
+
+    --opacity:1;
+    --transform:translate(0);
 }
+[data-animation="fade-left"]{
+    opacity: 0;
+    transform: translate(-100vw);
+    transition: all ease-in-out 1s 0.1s;
 
-/* a partir de aqui el CSS de las animaciones */
-
-@keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1 } }
-
-@keyframes anim-up { 
-from { opacity: 0; transform: translateY(100px); } 
-to { opacity: 1; transform: translateY(0px); }  
-}		
-
-@keyframes anim-down { 
-from { opacity: 0; transform: translateY(-100px); } 
-to { opacity: 1; transform: translateY(0px); }  
-}		
-
-@keyframes anim-left { 
-from { opacity: 0; transform: translateX(100px); } 
-to { opacity: 1; transform: translateX(0px); }  
-}		
-
-@keyframes anim-right { 
-from { opacity: 0; transform: translateX(-100px); } 
-to { opacity: 1; transform: translateX(0px); }  
-}		
-
-@keyframes anim-left-porc { 
-from { opacity: 0; transform: translateX(50%); } 
-to { opacity: 1; transform: translateX(0px); }  
-}		
-
-@keyframes anim-right-porc { 
-from { opacity: 0; transform: translateX(-50%); } 
-to { opacity: 1; transform: translateX(0px); }  
-}	
-
-.anim-up, .anim-down, .anim-left, .anim-right, .anim-fade-in, .anim-left-porc, .anim-right-porc {
-animation-duration: 1s; /* la animacion dura X segundos */
-animation-delay: 0.5s; /* esperamos X segundos antes de hacer la animacion */			
-animation-fill-mode: both; /* aplica estilos de la animacion antes y despues de reproducirla */
+    --opacity:1;
+    --transform:translate(0);
 }
+[data-animation="fade-right"]{
+    opacity: 0;
+    transform: translate(100vw);
+    transition: all ease-in-out 1s 0.1s;
 
-.anim-up { animation-name: anim-up; }
-.anim-down { animation-name: anim-down; }
-.anim-left { animation-name: anim-left; }
-.anim-right { animation-name: anim-right; }
-.anim-left-porc { animation-name: anim-left-porc; }
-.anim-right-porc { animation-name: anim-right-porc; }
-.anim-fade-in { animation-name: anim-fade-in; }
+    --opacity:1;
+    --transform:translate(0);
+}
+[data-animation="fade-down"]{
+    opacity: 0;
+    transform: translateY(-50vh);
+    transition: all ease-in-out 1s 0s;
 
-.anim-pause-2 { animation-delay: 2s; } 
-.anim-pause-3 { animation-delay: 3s; } 
-.anim-pause-4 { animation-delay: 4s; } 
-.anim-pause-5 { animation-delay: 5s; } 
+    --opacity:1;
+    --transform:translateY(0);
+}
+[data-animation="show"]{
+    opacity: 0;
+    transform: scale(0);
+    transition: all ease-in .6s .3s;
 
+    --opacity:1;
+    --transform:scale(1);
+}
+[data-animation="up"]{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all ease-in .6s .3s;
 
-.anim-pause-a{ animation-delay: 1s; }		
-.anim-pause-b{ animation-delay: 1.12s; }		
-.anim-pause-c{ animation-delay: 1.25s; }
-.anim-pause-d{ animation-delay: 1.37s; }
-.anim-pause-e{ animation-delay: 1.5s; }
-.anim-pause-f{ animation-delay: 1.67s; }
-.anim-pause-g{ animation-delay: 1.8s; }
-.anim-pause-h{ animation-delay: 2s; }
-.anim-pause-i{ animation-delay: 2.2s; }
-.anim-pause-j{ animation-delay: 2.5s; }
-.anim-pause-k{ animation-delay: 3s; }
+    --opacity:1;
+    --transform:translateY(0);
+}
+[data-animation="left"]{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all ease-in .6s .3s;
 
-
-/* todas las animaciones pausadas */
-.paused * { 
-animation-play-state: paused;
+    --opacity:1;
+    --transform:translateX(0);
+}
+[data-animation="right"]{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all ease-in 1s .3s;
+    --opacity:1;
+    --transform:translateX(0);
+}
+[data-animation="right-1"],[data-animation="right-1.1"],[data-animation="right-1.2"],[data-animation="right-1.3"],[data-animation="right-1.4"],[data-animation="right-1.5"],[data-animation="right-1.6"],[data-animation="right-1.7"],[data-animation="right-1.85"],[data-animation="right-2"],[data-animation="right-2.25"]{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all ease-in-out 1s 0.1s;
+    --opacity:1;
+    --transform:translateX(0);
+}
+[data-animation="right-1.1"]{    
+    transition: all ease-in-out 1.1s 0.1s;
+}
+[data-animation="right-1.2"]{    
+    transition: all ease-in-out 1.2s 0.1s;
+}
+[data-animation="right-1.3"]{    
+    transition: all ease-in-out 1.3s 0.1s;
+}
+[data-animation="right-1.4"]{    
+    transition: all ease-in-out 1.4s 0.1s;
+}
+[data-animation="right-1.5"]{    
+    transition: all ease-in-out 1.5s 0.1s;
+}
+[data-animation="right-1.6"]{    
+    transition: all ease-in-out 1.6s 0.1s;
+}
+[data-animation="right-1.7"]{    
+    transition: all ease-in-out 1.7s 0.1s;
+}
+[data-animation="right-1.85"]{    
+    transition: all ease-in-out 1.85s 0.1s;
+}
+[data-animation="right-2"]{    
+    transition: all ease-in-out 2s 0.1s;
+}
+[data-animation="right-2.25"]{    
+    transition: all ease-in-out 2.25s 0.1s;
+}
+.unset{
+    opacity: var(--opacity) !important;
+    transform: var(--transform) !important;
 }

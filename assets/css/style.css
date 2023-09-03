@@ -78,7 +78,7 @@
 * .navbarContainer {
   width: 100%;
   z-index: 100;
-  animation: inicial 7.5s 1;
+  animation: inicial 4.5s 1;
   /*
   position: sticky;
   top: 95vh; 
@@ -151,25 +151,31 @@
   font-size: 4rem;
   margin-bottom: -10vh;
   margin-top: 10vh;
+  /*
   animation: inicial 2s;
+  */
 }
 * .presentacion .nombre {
   color: var(--text-title-color-light-blue);
   font-size: 7.5rem;
   margin-top: 100px;
+  /*
   animation: inicial 2.5s;
+  */
   margin-bottom: -40px;
 }
 * .presentacion .apellido {
   font-size: 5.5rem;
   line-height: 0;
   padding-bottom: 100px;
+  /*
   animation: inicial 3s;
+  */
 }
 * .presentacion .descripcion {
   font-size: 2.5rem;
   margin-bottom: 13vh;
-  animation: inicial 4s;
+  animation: inicial 2s;
 }
 * .presentacion .bienvenido {
   color: var(--text-color-white-semi-solid-075);
@@ -178,7 +184,7 @@
   margin-top: 80vh;
   text-align: center;
   width: 100%;
-  animation: hola 5s 6s;
+  animation: hola 3s 3s;
   opacity: 0;
 }
 @keyframes bienvenido {

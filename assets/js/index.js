@@ -1,3 +1,4 @@
+// @ts-nocheck
 ///    let presentacion = document.getElementsByClassName('presentacion')[0]
 ///    let bienvenido = document.getElementsByClassName('bienvenido')[0]
 ///    setTimeout(() => {
@@ -7,27 +8,43 @@
 
 
 // esta funcion comprueba si un elemento esta visible en pantalla
-function isVisible(elm) {
-	var rect = elm.getBoundingClientRect();
-	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-	return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+///  function isVisible(elm) {
+///  	var rect = elm.getBoundingClientRect();
+///  	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+///  	return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+///  }
+///  
+///  // cuando se carga la página...
+///  window.addEventListener('DOMContentLoaded', (ev0) => {
+///          // asignamos un evento scroll...
+///  	window.addEventListener('scroll', (ev1) => {
+///                  // y a todos los elementos con la clase paused...
+///  		document.querySelectorAll(".paused").forEach(elm => {
+///  			if (isVisible(elm)) // que sean visibles...
+///  				elm.classList.remove("paused"); // les quitamos la clase paused
+///  		})
+///  	});
+///  });
+
+
+const sectionsAnimated = document.querySelectorAll(".animada")
+function trigger(entries){
+    entries.forEach(element => {
+        const section = element.target
+        section.classList.toggle("unset", element.isIntersecting) // seria un if, si es true aplica la clase unset, si es false la quita
+    });
+}
+const options = {
+    root : null, //document.querySelectorAll("animaaado")
+    rootMargin : "20px",
+    threshold:0
 }
 
-// cuando se carga la página...
-window.addEventListener('DOMContentLoaded', (ev0) => {
-        // asignamos un evento scroll...
-	window.addEventListener('scroll', (ev1) => {
-                // y a todos los elementos con la clase paused...
-		document.querySelectorAll(".paused").forEach(elm => {
-			if (isVisible(elm)) // que sean visibles...
-				elm.classList.remove("paused"); // les quitamos la clase paused
-		})
-	});
-});
+const observer = new IntersectionObserver(trigger, options)
 
-
-
-
+sectionsAnimated.forEach(img =>{
+    observer.observe(img)
+})
 
 /*
 import tinyTypewriter from 'tiny-typewriter/src/';
