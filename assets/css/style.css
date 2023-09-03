@@ -338,7 +338,7 @@
 }
 * .proyectos {
   background-color: var(--section-bg-color-2);
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 20px;
   text-align: center;
 }
