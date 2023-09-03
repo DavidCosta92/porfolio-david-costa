@@ -1,8 +1,33 @@
-let presentacion = document.getElementsByClassName('presentacion')[0]
-let bienvenido = document.getElementsByClassName('bienvenido')[0]
-setTimeout(() => {
-    presentacion.removeChild(bienvenido)
-  }, 8500)
+///    let presentacion = document.getElementsByClassName('presentacion')[0]
+///    let bienvenido = document.getElementsByClassName('bienvenido')[0]
+///    setTimeout(() => {
+///        presentacion.removeChild(bienvenido)
+///      }, 8500)
+///   
+
+
+// esta funcion comprueba si un elemento esta visible en pantalla
+function isVisible(elm) {
+	var rect = elm.getBoundingClientRect();
+	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+	return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
+// cuando se carga la página...
+window.addEventListener('DOMContentLoaded', (ev0) => {
+        // asignamos un evento scroll...
+	window.addEventListener('scroll', (ev1) => {
+                // y a todos los elementos con la clase paused...
+		document.querySelectorAll(".paused").forEach(elm => {
+			if (isVisible(elm)) // que sean visibles...
+				elm.classList.remove("paused"); // les quitamos la clase paused
+		})
+	});
+});
+
+
+
+
 
 /*
 import tinyTypewriter from 'tiny-typewriter/src/';

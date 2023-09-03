@@ -12,6 +12,7 @@
     <link href="./assets/css/ihover.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,279 +21,246 @@
     
 </head>
 <body>
-
-    <div class="snapScrollWrapper">
-        <div class="navbarContainer">
-            <ul>
-                <a href="#aboutMe"><li>About</li></a>
-                <a href="#skills"><li>Skills</li></a>
-                <a href="#proyectos"><li>Proyectos</li></a>
-                <a href="#charlemos"><li>Charlemos</li></a>
-            </ul>
-        </div>
-
-        <section class="presentacion snapScrollSection" id="presentacion">
-                <div class="hola">
-                    <p>¡Hola!</p>
-                </div>
-                <div class="soy">
-                    <p>Soy</p>
-                </div>
-                <div>
-                    <span  class="nombre">
-                        <p>David</p>
-                    </span>
-                    <div class="apellido">
-                        <p>Costa</p>
-                    </div>
-                </div>
-                <div class="descripcion">
-                    <p>Fullstack developer</p>
-                </div>
-                <div class="bienvenido">
-                    <p>¡Bienvenido!</p>
-                </div>
-        </section>
-
-        <section class="aboutMe snapScrollSection" id="aboutMe">
-            <div>
-                <div class="texto1">
-                    <p>Sobre</p>
-                </div>
-                <div class="texto2">
-                    <p>Mi</p>
-                </div>
-            </div>
-            <p>Vengo de la salud, sin embargo estoy buscando un nuevos rumbos y desafíos, en el mundo IT. Quiero crear y desarrollar nuevos productos, optimizar y solucionar problemas.
-            </p>
-            <div class="texto3">
-                <p>Busco un lugar donde cambiar el mundo a través del código! </p>
-            </div>
-            <p class="texto4">Pero mientras tanto, curso el penúltimo año de una tecnicatura de desarrollo, realizo cursos sobre tecnologías específicas y genero proyectos personales. Me gustaría orientarme a la lógica del backend, pero en un entorno diverso, dinámico y ágil, en el cual pueda nutrirme de otras habilidades y aportar desde mi experiencia en otras industrias
-            </p>
-            <div class="cv">
-                <a href="./assets/Fullstack Dev JAVA-MERN - COSTA DAVID - Cv.pdf" target="_blank" rel="noreferrer" title="Ver Curriculum">
-                    <p>¿Quieres ver mi Cv?</p>
-                </a>
-            </div>
-            <!-- 
-            <div>
-                <div class="texto1">
-                    <p>Sobre</p>
-                </div>
-                <div class="texto2">
-                    <p>Mi</p>
-                </div>
-            </div>
-            <p>Busco un proyecto que
-                genere un impacto, necesito de un
-                equipo donde apoyarme, aprender y con el
-                cual pueda compartir metas. 
-            </p>
-            <div class="texto3">
-                <p>Me gustaría orientarme a la lógica del backend, pero en un entorno diverso y agil, en el cual nutrirme de otras habilidades.</p>
-            </div>
-
-            <div class="cv">
-                <a href="./assets/Fullstack Dev JAVA-MERN - COSTA DAVID - Cv.pdf" target="_blank" rel="noreferrer" title="Ver Curriculum">
-                    <p>¿Quieres ver mi Cv?</p>
-                </a>
-            </div>
-        -->
-
-        </section>
-
-        <section class="skills snapScrollSection" id="skills">
-            <p class="titulo">Skills</p>
-            <div class="skillsContainer">
-                <div class="skill">
-                    <img src="./assets/icons/html-css-js.png" alt="Logo Html, Css y JavaScript"/>
-                    <p class="skill-text">Html Css Js</p>
-                </div>
-                <div class="skill">
-                    <img src="./assets/icons/react.png" alt="Logo react"/>
-                    <p class="skill-text">React Js</p>
-                </div>
-                <div class="skill">
-                    <img src="./assets/icons/node.png" alt="Logo JAVA"/>
-                    <p class="skill-text">Node Js</p>
-                </div>    
-                <div class="skill">
-                    <img src="./assets/icons/java.png" alt="Logo JAVA"/>
-                    <p class="skill-text">Java</p>
-                </div>                
-                <div class="skill">
-                    <img src="./assets/icons/spring.png" alt="Logo Spring"/>
-                    <p class="skill-text">Springboot</p>
-                </div>                
-                <div class="skill">
-                    <img src="./assets/icons/python.png" alt="Logo python"/>
-                    <p class="skill-text">Python</p>
-                </div>
-
-                <div class="skill">
-                    <img src="./assets/icons/mysql.png" alt="Logo mysql"/>   
-                    <p class="skill-text">MySQL</p>
-                </div>                
-                <div class="skill">
-                    <img src="./assets/icons/sqlite.png" alt="Logo sqlite"/> 
-                    <p class="skill-text">SQLite</p>
-                </div>                
-                <div class="skill">
-                    <img src="./assets/icons/mongo.png" alt="Logo mongo DB"/> 
-                    <p class="skill-text">Mongo DB</p>
-                </div>
-                <div class="skill">
-                    <img src="./assets/icons/firebase.png" alt="Logo firebase"/> 
-                    <p class="skill-text">Firebase</p>
-                </div>
-                <div class="skill">
-                    <img src="./assets/icons/git.png" alt="Logo git"/> 
-                    <p class="skill-text">Git</p>
-                </div>                            
-            </div>
-        
-            <div class="aprendiendoContainer snapScrollSection">
-                    <div class="contenedorAprendizajesB">
-                        <p class="softSkills">Además, me encuentro cursando una tecnicatura que esta fuertemente
-                            orientada a la <span class="palabraEspecialSoftSkills">practica en equipo y a la constante entrega de mejoras</span>. 
-                            A travez del uso de metodologias agiles, se nos pide iterar continuamente sobre el producto buscando nuevas actualizaciones.
-                        </p>
-                        <div class="divisor2"></div>
-                        <p class="softSkills">Esta forma de estudio, ayuda fortaleciendo mis <span class="palabraEspecialSoftSkills">capacidades de compañerismo, empatia, comunicacion asertiva,
-                            y liderazgo</span>.
-                    </p>
-        
-                    </div>
-            </div>
-        </section>
-
-        <section class="proyectos snapScrollSection" id="proyectos">
-            <p>Ultimos Proyectos</p>
-            <div class="scrollProyectos">
-                <img src="./assets/icons/scroll.png" alt="scroll">
-            </div>
-        
-            <div class="proyectosContainer">
-
-                <!-- NODE JS -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect"><a>
-                    <div class="img"><img src="./assets/imagenes/node-tp-coder.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://backend-ecommerce-nodejs-production.up.railway.app/');" />
-                            <input type="button" value="Docs" onclick="javascript:window.open('https://backend-ecommerce-nodejs-production.up.railway.app/api/docs');" />
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/Trabajo-Final-Backend-NodeJS-Coderhouse.git','','width=600,height=400,left=50,top=50,toolbar=yes');" />
-                        </span>
-                        <p id="tituloProyecto">Trabajo Final NODE JS </p>
-                        <p id="descripcionProyecto">Ecomerce creado como parte de mi formacion dentro de Coderhouse. Creado con Node JS, Express, Mongo, Sockets, Swagger, Handlebars, passport, Winston, entre otros. Enfocado solo en el backend, por lo que front solo muestra lo minimo e indispensable para ver la informacion. </p>
-                    </div>
-                    </a>
-                </div>
-
-
-                <!-- API JAVA -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect"><a>
-                    <div class="img"><img src="./assets/imagenes/API2.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <!-- 
-                                
-                            
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://appstudenssjtec-production.up.railway.app/','','width=600,height=400,left=50,top=50,toolbar=yes');" />
-
-                            -->
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/api-agenda-java.git','','width=600,height=400,left=50,top=50,toolbar=yes');" />
-                            <input type="button" value="Docs" onclick="javascript:window.open('https://docs.google.com/document/d/1uOMZOC_m3fLgB-7yIwzABKwj6gHbcKg4ExLcMi2Gysk/edit?usp=share_link','','width=600,height=400,left=50,top=50,toolbar=yes');" />
-                        </span>
-                        <p id="tituloProyecto">API "Pied Piper" en JAVA</p>
-                        <p id="descripcionProyecto">Api de contactos, para agregar, editar y eliminar contactos, con authenticacion de usarios. Creada en JAVA con Spring, deploy en Railway.</p>
-                    </div>
-                    </a>
-                </div>
-
-                
-                <!-- ONE DROP -->
-
-
-                <!-- ONE DROP -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect"><a>
-                    <div class="img"><img src="./assets/imagenes/one-drop.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="App" onclick="javascript:window.open('https://onedropapp-grupo30.netlify.app/');" />
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/danielasgomez273/a36g36.git');" />
-                        </span>
-                        <p id="tituloProyecto">One Drop (En iteracion constante)</p>
-                        <p id="descripcionProyecto">One drop, es una aplicacion para guardar y organizar los registros de glucemia en pacientes diabeticos.
-                            Creada con fines educativos como parte de una Tecnicatura en Desarrollo Web actualmente en curso. Desarrollada en Python, Django y angular. Creada en un equipo agil, donde mi rol principal fue como Backend.
-                            </p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- MEC -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect"><a>
-                    <div class="img"><img src="./assets/imagenes/mec.svg" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://mecantronic.com.ar/','','width=900,height=600,left=50,top=50,toolbar=yes');" />
-                        </span>
-                        <p id="tituloProyecto">Mecantronic</p>
-                        <p id="descripcionProyecto">
-                            Landing page creada en equipo, para la empresa Mecantronic, en la cual mi rol fue el desarrollo de la aplicacion en el codigo frontend en React JS.
-                            El equipo utilizo metodologias agiles, y varias herramientas como figma, notion, github y otros, para poder realizar el proyecto de manera armonica y de la forma mas eficiente posible.
-                            Desarrollado con React Js, Tailwind, Swiper, toastify, etc.
-                        </p>
-                    </div>
-                    </a>
-                </div>
-
-
-            </div>
-            
-        </section>
-
-        <section class="charlemos snapScrollSection" id="charlemos"> 
-            <p>¿ Charlamos ?</p>
-            <div class="contacto">
-                <a href="https://www.linkedin.com/in/david-costa-yafar" target="_blank" rel="noreferrer" title="Visitar LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                <a href="https://github.com/DavidCosta92" target="_blank" rel="noreferrer" title="Vamos a los repos">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
-                <a href="mailto:davidcst2991@gmail.com" title="¿Quieres enviarme un mail?">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.021 17.824c-3.907 0-6.021-2.438-6.021-5.586 0-3.363 2.381-6.062 6.638-6.062 3.107 0 5.362 2.019 5.362 4.801 0 4.356-5.165 5.506-4.906 3.021-.354.555-.927 1.177-2.026 1.177-1.257 0-2.04-.92-2.04-2.403 0-2.222 1.461-4.1 3.19-4.1.829 0 1.399.438 1.638 1.11l.232-.816h1.169c-.122.416-1.161 4.264-1.161 4.264-.323 1.333.675 1.356 1.562.648 1.665-1.29 1.75-4.664-.499-6.071-2.411-1.445-7.897-.551-7.897 4.347 0 2.806 1.976 4.691 4.914 4.691 1.719 0 2.771-.465 3.648-.974l.588.849c-.856.482-2.231 1.104-4.391 1.104zm-1.172-7.153c-.357.67-.588 1.538-.588 2.212 0 1.805 1.761 1.816 2.626.12.356-.697.586-1.586.586-2.265 0-1.458-1.748-1.717-2.624-.067z"/></svg></a>
-                <a href="./assets/Fullstack Dev JAVA-MERN - COSTA DAVID - Cv.pdf" target="_blank" rel="noreferrer" title="Ver Curriculum">
-                    <img src="./assets/icons/cv.png"/>
-                </a>
-                    <!-- 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 24h-20v-24h10.189c3.162 0 9.811 7.223 9.811 9.614v14.386zm-10.638-22h-7.362v20h16v-11.543c0-4.107-6-2.457-6-2.457s1.517-6-2.638-6zm.638 12h-5l1-5 1.395 1.744c.76-.467 1.648-.744 2.605-.744 2.76 0 5 2.24 5 5s-2.24 5-5 5c-2.482 0-4.544-1.812-4.934-4.184l1.967-.367c.217 1.443 1.464 2.551 2.967 2.551 1.656 0 3-1.345 3-3s-1.344-3-3-3c-.483 0-.935.123-1.339.326l1.339 1.674z"/></svg></a>
-                    -->
-            </div>
-            <form class="formulario" id="contact-form" action="https://formspree.io/f/mnqyjapy"  method="POST">
-                <!-- => para "FORMSUBMIT" action="https://formsubmit.co/c4da5ffe16f2017c6b7b40a809c770c7"-->
-                <div class="labelFormContacto">
-                    <label>Nombre</label>
-                    <input type="text" name="name" id="name" required/>
-                </div>
-        
-        
-                <div class="labelFormContacto">
-                    <label >Email</label>
-                    <input type="email" name="email" id="email" required replayTo/>
-                </div>
-                <div class="labelFormContacto textArea">
-                    <label > ¿Que te gustaria contarme? </label>
-                    <textarea type="text" name="mensaje" id="mensaje" required></textarea>                  
-                </div>
-        
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_autoresponse" value="Gracias por comunicarte, en breve estare respondiendo.">
-                <input type="submit" class="botonEnvio" value="Send" />               
-            </form>
-        </section>
-
+    <div class="navbarContainer">
+        <ul>
+            <a href="#aboutMe"><li>About</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#proyectos"><li>Proyectos</li></a>
+            <a href="#charlemos"><li>Charlemos</li></a>
+        </ul>
     </div>
+
+    <section class="presentacion paused" id="presentacion">
+        <div class="hola">
+            <p>¡Hola!</p>
+        </div>
+        <div class="soy">
+            <p>Soy</p>
+        </div>
+        <div>
+            <span  class="nombre">
+                <p>David</p>
+            </span>
+            <div class="apellido">
+                <p>Costa</p>
+            </div>
+        </div>
+        <div class="descripcion">
+            <p>Fullstack developer</p>
+        </div>
+        <div class="bienvenido">
+            <p>¡Bienvenido!</p>
+        </div>
+    </section>
+
+    <section class="aboutMe paused " id="aboutMe">
+        <div>
+            <div class="texto1 anim-left">
+                <p>Sobre</p>
+            </div>
+            <div class="texto2 anim-right">
+                <p>Mi</p>
+            </div>
+        </div>
+        <p class="anim-fade-in anim-pause-2">Vengo de la salud, sin embargo estoy buscando un nuevos rumbos y desafíos, en el mundo IT. Quiero crear y desarrollar nuevos productos, optimizar y solucionar problemas.
+        </p>
+        <div class="texto3 anim-fade-in anim-pause-3">
+            <p>Busco un lugar donde cambiar el mundo a través del código! </p>
+        </div>
+        <p class="texto4 anim-fade-in anim-pause-4">Pero mientras tanto, curso el penúltimo año de una tecnicatura de desarrollo, realizo cursos sobre tecnologías específicas y genero proyectos personales. Me gustaría orientarme a la lógica del backend, pero en un entorno diverso, dinámico y ágil, en el cual pueda nutrirme de otras habilidades y aportar desde mi experiencia en otras industrias
+        </p>
+        <div class="cv anim-up anim-pause-5">
+            <a href="./assets/Fullstack Dev JAVA-MERN - COSTA DAVID - Cv.pdf" target="_blank" rel="noreferrer" title="Ver Curriculum" >
+                <p>¿Quieres ver mi Cv?</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="skills paused" id="skills">
+        <p class="titulo anim-fade-in">Skills</p>
+        <div class="skillsContainer anim-fade-in">
+            <div class="skill anim-fade-in anim-pause-a">
+                <img src="./assets/icons/html-css-js.png" alt="Logo Html, Css y JavaScript"/>
+                <p class="skill-text">Html Css Js</p>
+            </div>
+            <div class="skill anim-fade-in anim-pause-b">
+                <img src="./assets/icons/react.png" alt="Logo react"/>
+                <p class="skill-text">React Js</p>
+            </div>
+            <div class="skill anim-fade-in anim-pause-c">
+                <img src="./assets/icons/node.png" alt="Logo JAVA"/>
+                <p class="skill-text">Node Js</p>
+            </div>    
+            <div class="skill anim-fade-in anim-pause-d">
+                <img src="./assets/icons/java.png" alt="Logo JAVA"/>
+                <p class="skill-text">Java</p>
+            </div>                
+            <div class="skill anim-fade-in anim-pause-e">
+                <img src="./assets/icons/spring.png" alt="Logo Spring"/>
+                <p class="skill-text">Springboot</p>
+            </div>                
+            <div class="skill anim-fade-in anim-pause-f">
+                <img src="./assets/icons/python.png" alt="Logo python"/>
+                <p class="skill-text">Python</p>
+            </div>
+
+            <div class="skill anim-fade-in anim-pause-g">
+                <img src="./assets/icons/mysql.png" alt="Logo mysql"/>   
+                <p class="skill-text">MySQL</p>
+            </div>                
+            <div class="skill anim-fade-in anim-pause-h">
+                <img src="./assets/icons/sqlite.png" alt="Logo sqlite"/> 
+                <p class="skill-text">SQLite</p>
+            </div>                
+            <div class="skill anim-fade-in anim-pause-i">
+                <img src="./assets/icons/mongo.png" alt="Logo mongo DB"/> 
+                <p class="skill-text">Mongo DB</p>
+            </div>
+            <div class="skill anim-fade-in anim-pause-j">
+                <img src="./assets/icons/firebase.png" alt="Logo firebase"/> 
+                <p class="skill-text">Firebase</p>
+            </div>
+            <div class="skill anim-fade-in anim-pause-k">
+                <img src="./assets/icons/git.png" alt="Logo git"/> 
+                <p class="skill-text">Git</p>
+            </div>                            
+        </div>
+    
+        <div class="aprendiendoContainer paused">
+                <div class="contenedorAprendizajesB">
+                    <p class="softSkills anim-up anim-pause-a">Además, me encuentro cursando una tecnicatura que esta fuertemente
+                        orientada a la <span class="palabraEspecialSoftSkills">practica en equipo y a la constante entrega de mejoras</span>. 
+                        A travez del uso de metodologias agiles, se nos pide iterar continuamente sobre el producto buscando nuevas actualizaciones.
+                    </p>
+                    <div class="divisor2 anim-up anim-pause-j"></div>
+                    <p class="softSkills anim-up anim-pause-j">Esta forma de estudio, ayuda fortaleciendo mis <span class="palabraEspecialSoftSkills">capacidades de compañerismo, empatia, comunicacion asertiva,
+                        y liderazgo</span>.
+                    </p>    
+                </div>
+        </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <p>Ultimos Proyectos</p>
+        <div class="scrollProyectos">
+            <img src="./assets/icons/scroll.png" alt="scroll">
+        </div>
+    
+        <div class="proyectosContainer paused">
+
+            <!-- NODE JS -->
+            <div class="ih-item square colored effect6 from_top_and_bottom cardProyect anim-right-porc anim-pause-a"><a>
+                <div class="img"><img src="./assets/imagenes/node-tp-coder.png" alt="img"></div>
+                <div class="info">
+                    <span class="botoneraProyecto">
+                        <input type="button" value="Deploy" onclick="javascript:window.open('https://backend-ecommerce-nodejs-production.up.railway.app/');" />
+                        <input type="button" value="Docs" onclick="javascript:window.open('https://backend-ecommerce-nodejs-production.up.railway.app/api/docs');" />
+                        <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/Trabajo-Final-Backend-NodeJS-Coderhouse.git','','width=600,height=400,left=50,top=50,toolbar=yes');" />
+                    </span>
+                    <p id="tituloProyecto">Trabajo Final NODE JS </p>
+                    <p id="descripcionProyecto">Ecomerce creado como parte de mi formacion dentro de Coderhouse. Creado con Node JS, Express, Mongo, Sockets, Swagger, Handlebars, passport, Winston, entre otros. Enfocado solo en el backend, por lo que front solo muestra lo minimo e indispensable para ver la informacion. </p>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- API JAVA -->
+            <div class="ih-item square colored effect6 from_top_and_bottom cardProyect anim-left-porc anim-pause-e"><a>
+                <div class="img"><img src="./assets/imagenes/API2.png" alt="img"></div>
+                <div class="info">
+                    <span class="botoneraProyecto">
+                        <!-- 
+                            
+                        
+                        <input type="button" value="Deploy" onclick="javascript:window.open('https://appstudenssjtec-production.up.railway.app/','','width=600,height=400,left=50,top=50,toolbar=yes');" />
+
+                        -->
+                        <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/api-agenda-java.git','','width=600,height=400,left=50,top=50,toolbar=yes');" />
+                        <input type="button" value="Docs" onclick="javascript:window.open('https://docs.google.com/document/d/1uOMZOC_m3fLgB-7yIwzABKwj6gHbcKg4ExLcMi2Gysk/edit?usp=share_link','','width=600,height=400,left=50,top=50,toolbar=yes');" />
+                    </span>
+                    <p id="tituloProyecto">API "Pied Piper" en JAVA</p>
+                    <p id="descripcionProyecto">Api de contactos, para agregar, editar y eliminar contactos, con authenticacion de usarios. Creada en JAVA con Spring, deploy en Railway.</p>
+                </div>
+                </a>
+            </div>
+
+            
+            <!-- ONE DROP -->
+
+
+            <!-- ONE DROP -->
+            <div class="ih-item square colored effect6 from_top_and_bottom cardProyect anim-right-porc  anim-pause-i"><a>
+                <div class="img"><img src="./assets/imagenes/one-drop.png" alt="img"></div>
+                <div class="info">
+                    <span class="botoneraProyecto">
+                        <input type="button" value="App" onclick="javascript:window.open('https://onedropapp-grupo30.netlify.app/');" />
+                        <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/danielasgomez273/a36g36.git');" />
+                    </span>
+                    <p id="tituloProyecto">One Drop (En iteracion constante)</p>
+                    <p id="descripcionProyecto">One drop, es una aplicacion para guardar y organizar los registros de glucemia en pacientes diabeticos.
+                        Creada con fines educativos como parte de una Tecnicatura en Desarrollo Web actualmente en curso. Desarrollada en Python, Django y angular. Creada en un equipo agil, donde mi rol principal fue como Backend.
+                        </p>
+                </div>
+                </a>
+            </div>
+
+            <!-- MEC -->
+            <div class="ih-item square colored effect6 from_top_and_bottom cardProyect anim-left-porc anim-pause-k"><a>
+                <div class="img"><img src="./assets/imagenes/mec.svg" alt="img"></div>
+                <div class="info">
+                    <span class="botoneraProyecto">
+                        <input type="button" value="Deploy" onclick="javascript:window.open('https://mecantronic.com.ar/','','width=900,height=600,left=50,top=50,toolbar=yes');" />
+                    </span>
+                    <p id="tituloProyecto">Mecantronic</p>
+                    <p id="descripcionProyecto">
+                        Landing page creada en equipo, para la empresa Mecantronic, en la cual mi rol fue el desarrollo de la aplicacion en el codigo frontend en React JS.
+                        El equipo utilizo metodologias agiles, y varias herramientas como figma, notion, github y otros, para poder realizar el proyecto de manera armonica y de la forma mas eficiente posible.
+                        Desarrollado con React Js, Tailwind, Swiper, toastify, etc.
+                    </p>
+                </div>
+                </a>
+            </div>
+        </div>        
+    </section>
+    <section class="charlemos" id="charlemos"> 
+        <p>¿ Charlamos ?</p>
+        <div class="contacto">
+            <a href="https://www.linkedin.com/in/david-costa-yafar" target="_blank" rel="noreferrer" title="Visitar LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://github.com/DavidCosta92" target="_blank" rel="noreferrer" title="Vamos a los repos">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
+            <a href="mailto:davidcst2991@gmail.com" title="¿Quieres enviarme un mail?">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.021 17.824c-3.907 0-6.021-2.438-6.021-5.586 0-3.363 2.381-6.062 6.638-6.062 3.107 0 5.362 2.019 5.362 4.801 0 4.356-5.165 5.506-4.906 3.021-.354.555-.927 1.177-2.026 1.177-1.257 0-2.04-.92-2.04-2.403 0-2.222 1.461-4.1 3.19-4.1.829 0 1.399.438 1.638 1.11l.232-.816h1.169c-.122.416-1.161 4.264-1.161 4.264-.323 1.333.675 1.356 1.562.648 1.665-1.29 1.75-4.664-.499-6.071-2.411-1.445-7.897-.551-7.897 4.347 0 2.806 1.976 4.691 4.914 4.691 1.719 0 2.771-.465 3.648-.974l.588.849c-.856.482-2.231 1.104-4.391 1.104zm-1.172-7.153c-.357.67-.588 1.538-.588 2.212 0 1.805 1.761 1.816 2.626.12.356-.697.586-1.586.586-2.265 0-1.458-1.748-1.717-2.624-.067z"/></svg></a>
+            <a href="./assets/Fullstack Dev JAVA-MERN - COSTA DAVID - Cv.pdf" target="_blank" rel="noreferrer" title="Ver Curriculum">
+                <img src="./assets/icons/cv.png"/>
+            </a>
+                <!-- 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 24h-20v-24h10.189c3.162 0 9.811 7.223 9.811 9.614v14.386zm-10.638-22h-7.362v20h16v-11.543c0-4.107-6-2.457-6-2.457s1.517-6-2.638-6zm.638 12h-5l1-5 1.395 1.744c.76-.467 1.648-.744 2.605-.744 2.76 0 5 2.24 5 5s-2.24 5-5 5c-2.482 0-4.544-1.812-4.934-4.184l1.967-.367c.217 1.443 1.464 2.551 2.967 2.551 1.656 0 3-1.345 3-3s-1.344-3-3-3c-.483 0-.935.123-1.339.326l1.339 1.674z"/></svg></a>
+                -->
+        </div>
+        <form class="formulario" id="contact-form" action="https://formspree.io/f/mnqyjapy"  method="POST">
+            <!-- => para "FORMSUBMIT" action="https://formsubmit.co/c4da5ffe16f2017c6b7b40a809c770c7"-->
+            <div class="labelFormContacto">
+                <label>Nombre</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+    
+    
+            <div class="labelFormContacto">
+                <label >Email</label>
+                <input type="email" name="email" id="email" required replayTo/>
+            </div>
+            <div class="labelFormContacto textArea">
+                <label > ¿Que te gustaria contarme? </label>
+                <textarea type="text" name="mensaje" id="mensaje" required></textarea>                  
+            </div>
+    
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Gracias por comunicarte, en breve estare respondiendo.">
+            <input type="submit" class="botonEnvio" value="Send" />               
+        </form>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
 
