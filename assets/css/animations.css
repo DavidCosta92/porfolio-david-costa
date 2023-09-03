@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    overflow-x: hidden; /* para que nada sobresalga en horizontal */
+    overflow-x: hidden !important; /* para que nada sobresalga en horizontal */
 }
 
 
