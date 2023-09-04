@@ -23,7 +23,7 @@ body {
 [data-animation="fade-right"]{
     opacity: 0;
     transform: translate(100vw);
-    transition: all ease-in-out 1s 0.1s;
+    transition: all ease-in-out 1.5s 0.1s;
 
     --opacity:1;
     --transform:translate(0);

@@ -91,8 +91,6 @@
         position: fixed;
         
         ul{
-           
-            height: 4vh;
             margin: 0;
             padding: 0;
             display: flex;
@@ -228,10 +226,11 @@
             font-size: 1.5rem;
         }
         .texto3 i{
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-style:italic;
-            font-weight: 600;
-            color: var(--hover-bg-color-dark-blue-solid);  
+            font-weight: 400;
+            color: var(--text-title-color-dark-blue);  
+            filter: drop-shadow(1px 1px 5px rgba(132, 229, 229, 0.342));    
         }
         p{
             color: var(--text-color-white-semi-solid-075);
