@@ -54,7 +54,6 @@
 
 
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -277,7 +276,9 @@
         min-height: 100vh;
         background-color: var(--section-bg-color-1);
         padding: 0 20px;
-        overflow: scroll;
+        //overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -401,7 +402,8 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 10px;
-            overflow-y: scroll;
+            overflow-x: hidden;
+            overflow-y: hidden;
             /*
             height: 74vh;
             */
