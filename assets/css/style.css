@@ -76,7 +76,7 @@
   }
 }
 * .navbarContainer {
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   animation: inicial 4.5s 1;
   /*
