@@ -1,10 +1,5 @@
 // @ts-nocheck
-///    let presentacion = document.getElementsByClassName('presentacion')[0]
-///    let bienvenido = document.getElementsByClassName('bienvenido')[0]
-///    setTimeout(() => {
-///        presentacion.removeChild(bienvenido)
-///      }, 8500)
-///   
+
 
 
 // esta funcion comprueba si un elemento esta visible en pantalla

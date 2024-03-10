@@ -58,11 +58,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Signika Negative', sans-serif;
-    @keyframes inicial {
-        from {opacity: 0;}
-        90%{opacity: 0; }
-        to { opacity: 1; }
-    }
 
     /*
     .snapScrollWrapper {
@@ -74,17 +69,28 @@
             scroll-snap-align: start;
           }
       }
-    */
+    */    
+    .sectionContainer{
+        margin: auto;
+        width: 80%;
+        max-width: 1200px;
+    }
     .navbarContainer{
         width: 100vw;
         z-index: 100;
-        animation: inicial 4.5s 1;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /*
         position: sticky;
         top: 95vh; 
         height: 0;
         */
-        background-color: rgba(3, 92, 127, 0.7);
+        background: transparent;
+        backdrop-filter: blur(10px);
+        background-color: rgba(3, 92, 127, 0.3);
+        border-bottom: 2px solid rgba(3, 92, 127, 0.5);
         position: fixed;
         
         ul{
@@ -96,15 +102,17 @@
             margin-bottom: 10px;
             padding: 5px;
             line-height: 0;
+            width: 80%;
+            max-width: 1500px;
             a{
                 text-decoration: none;                    
                 li{
                     margin-top: 12px;
-                    color: white;
-                    font-size: 1.1rem;
+                    color: var(--text-color-white-semi-solid-075);
+                    font-size: 1.25rem;
                     font-weight: 400;
                     padding: 3px 5px;
-                    filter: drop-shadow(2px 2px 2px rgb(3, 242, 255));                  
+                    /* filter: drop-shadow(2px 2px 2px rgb(3, 242, 255));*/                  
                     &:hover{                        
                         text-decoration: underline 1px var(--text-title-color-light-blue);
                         color: var(--nav-text-color-white-solid);
@@ -125,95 +133,71 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         color: var(--text-color-grey-semi-solid);
+        padding-top: 25vh;
+        padding-bottom: 25vh;
         .hola{            
             color: var(--text-color-white-semi-solid-075);
-            margin-top: 10vh;            
             font-size: 6rem;
             position: absolute;
             text-align: center;
             width: 100%;
-            animation: hola 1.5s;
             opacity: 0;
-        }
-        @keyframes hola {
-            from { opacity: 1; }
-            to { opacity: 0; }
         }
         .soy{
             color: var(--text-color-white-semi-solid);
             font-size: 4rem;
-            margin-bottom: -10vh;
-            margin-top: 10vh;
-            /*
-            animation: inicial 2s;
-            */
+            line-height: 0;
         }
         .nombre{
             color: var(--text-title-color-light-blue);
             font-size: 7.5rem;
-            margin-top: 100px;
-            /*
-            animation: inicial 2.5s;
-            */
-            margin-bottom: -40px;
+            line-height: 1;
         }
         .apellido{
             font-size: 5.5rem;
             line-height: 0;
             padding-bottom: 100px;
-            /*
-            animation: inicial 3s;
-            */
         }
         .descripcion{
             font-size: 2.5rem;
-            margin-bottom: 13vh;
-            animation: inicial 2s;
-        }
-        .bienvenido{
-            color: var(--text-color-white-semi-solid-075);            
-            font-size: 2.2rem;
-            position: absolute;
-            margin-top: 80vh;
-            text-align: center;
-            width: 100%;
-            animation: hola 3s 3s;
-            opacity: 0;
-        }
-        @keyframes bienvenido {
-            from { opacity: 1; }
-            90% { opacity: 1; }
-            to { opacity: 0; }
         }
     }
     .aboutMe{
-        /*
         height: 100vh;
-        */
         background-color: var(--section-bg-color-2);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
-        padding:5rem 3vw;
-        div{
+        .tituloContainer{
             .texto1{
                 p{
+                    line-height: 0.5;
+                    font-size: 3.5rem;
                     color: var(--text-color-white-semi-solid-075);
                     
                 }
             }
             .texto2{
                 p{
+                    line-height: 0.5;
+                    font-size: 4.5rem;
                     color: var(--text-title-color-dark-blue);
 
                 }
             }
-        } 
 
+        }
+        .textContainer{     
+            padding-top: 10vh;           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 70vh;
+        }
         .texto3 p{
             color: var(--text-title-color-dark-blue);
             font-size: 1.5rem;
@@ -223,7 +207,7 @@
             font-size: 1.5rem;
         }
         .texto3 i{
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-style:italic;
             font-weight: 400;
             color: var(--text-title-color-dark-blue);  
@@ -273,15 +257,34 @@
     .skills{
         min-height: 100vh;
         background-color: var(--section-bg-color-1);
-        padding: 0 20px;
-        //overflow: scroll;
-        overflow-x: hidden;
-        overflow-y: hidden;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        padding-top: 6rem;
+        text-align: center;        
+        .tituloContainer{
+            p.titulo{
+                line-height: 0.5;
+                font-size: 3.5rem;
+                color: var(--text-color-white-semi-solid-075);
+            }
+        }
+        span.textoContainer{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 70vh;
+
+            .skillsContainer{ 
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+            }
+
+        }
+
+
         p{
             color: var(--text-title-color-light-blue);
             font-size: 3rem;
@@ -293,7 +296,7 @@
             justify-content: space-around;
             
             border-radius: 20px;
-            max-width: 800px;
+            // max-width: 800px;
             border: 1px solid var(--text-title-color-light-blue);
             .skill{
                 padding: 10px;
@@ -320,21 +323,20 @@
             }
 
         }
-        .aprendiendoContainer{    
-            margin-bottom: 100px;        
+        .aprendiendoContainer{       
             .contenedorAprendizajesB{                
                 .softSkills{
-                    font-size: 1.25rem;
+                    font-size: 1.5rem;
                     color: var(--text-color-white-semi-solid-075);
                     font-weight: 300;
                     padding-top: 5vh;
                 } 
                 .divisor2{
                     width: 70%;
-                    max-width: 300px;
+                    max-width: 1000px;
                     border-radius: 1px;
                     margin: auto;
-                    margin-top: 30px;
+                    margin-top: 5vh;
                     height: 1px;
                     background-color: var(--text-title-color-light-blue);
                     box-shadow: 1px 1px 5px var(--text-title-color-light-blue);
@@ -342,7 +344,7 @@
                 .palabraEspecialSoftSkills{
                     color: var(--text-title-color-super-light-blue);
                     font-weight: 500;
-                    font-size: 1.25rem;                    
+                    font-size: 1.5rem;                    
                 }
             }
         }
@@ -372,27 +374,11 @@
             position: absolute;
             z-index: 20;
             display: flex;
-            justify-content: end;
-
-            animation-name: scrolling;
-            animation-duration: 0.7s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            
+            justify-content: end;            
             display: none;
             
             img{
                 width: 60px;
-            }
-        }
-        @keyframes scrolling {
-            from {
-                filter:drop-shadow(2px 2px var(--text-title-color-light-blue));
-            }
-            
-            to {
-                filter:drop-shadow(2px 2px var(--text-title-color-dark-blue));
-                transform: scale(1.025);
             }
         }
         .proyectosContainer{
@@ -559,471 +545,23 @@
 
 /* Medias queries  */
 @media (max-height: 650px){
-    .presentacion{
-        .soy{
-            font-size: 3rem;
-        }
-        .apellido{
-            font-size: 5.5rem;
-        }
-        .apellido{
-            font-size: 4.5rem;
-        }
-        .descripcion{
-            font-size: 2rem;
-        }
-        .bienvenido{
-            font-size: 2rem;
-        }
-    }
-    .aboutMe{
-        p{
-            font-size: 1.1rem;
-        }
-        .texto1 p{
-            padding-top: 1rem;
-            font-size: 2rem;
-        }
-        .texto2 p{
-            margin-top: -3rem;
-            font-size: 2.5rem;
-        }
-        .texto3 p{
-            font-size: 1.1rem;
-        }
-        .cv a p{
-            font-size: 1.6rem;
-        }
-    }
-    .skills{
-        p{
-            font-size: 2rem;
-        }
-    }
 }
 
 @media (max-width: 800px){
-    .charlemos{
-        p{
-            margin-top: 3rem;
-            font-size: 2rem;
-        }
-        .formulario{
-            margin-top: 40px;
-            .labelFormContacto{
-                width: 90%;
-            }
-            .botonEnvio{
-                width: 75%;
-                max-width: 350px;
-            }
-        }
-        .contacto{
-            svg,img{
-                height: 35px;
-                margin: 15px;
-            }
-        }
-    }
-    .aboutMe{
-        div{
-            .texto1{
-                p{
-                    color: var(--text-color-white-semi-solid-075);
-                    font-size: 3rem;
-                }
-            }
-            .texto2{
-                margin-top: -5rem;
-                p{
-                    color: var(--text-title-color-dark-blue);
-                    font-size: 5rem;
-                    font-weight: 500;
-                }
-            }
-        } 
-    }
-    
 }
 
 
 /* Medias queries  */
 @media (min-width: 800px){
-    ::-webkit-scrollbar {
-        display: none;
-     }
-     .charlemos .formulario .labelFormContacto{
-           width: 450px;
-    }
-    .ih-item.square{
-        width: 40%;
-        max-width: 550px;
-        
-    }
-    .presentacion{
-        .hola{
-            margin-top: 10vh;            
-            font-size: 8.5rem;
-        }
-        .soy{
-            font-size: 5rem;
-            margin-bottom: -10vh;
-            margin-top: 10vh;
-        }
-        .nombre{
-            font-size: 9rem;
-            margin-top: 100px;
-            margin-bottom: -80px;
-        }
-        .apellido{
-            font-size: 7rem;
-            margin-bottom: 40px;
-        }
-        .descripcion{
-            font-size: 3.5rem;
-            margin-bottom: 15vh;
-        }
-        .bienvenido{           
-            font-size: 7rem;
-            margin-top: 80vh;
-        }
-    }
-    .aboutMe{
-        
-        // padding-top: 20vh;
-        padding-bottom: 10vh;
-            
-        .texto1{
-            p{
-                font-size: 4.5rem;
-            }
-        }
-        .texto2{
-            margin-top: -9rem;
-            p{
-                font-size: 8rem;
-                font-weight: 500;
-                margin-top: -80px;
-            }
-        }
-        .texto3 p{
-            font-size: 2.2rem;
-            font-weight: 500;
-        }
-        .texto3 i{
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-        p{
-            font-size: 2rem;
-            font-weight: 300;
-            padding-top: 3vh;
-            margin: 0 30px 1vh;
-        }
-        .cv{
-           a{
-             p{
-                font-size: 3rem;
-                font-weight: 300;
-                padding: 2px;
-                margin: 4px;
-                margin-top: 5vh;
-                border-radius: 30px;
-            }
-           }
-            
-        }
-    }
-    .skills{
-        padding-top: 5rem;
-        p{
-            font-size: 4rem;
-        }
-        
-        .skillsContainer{
-            max-width: 800px;
-            img{
-                width: 10vw;
-                margin: 10px;
-            }            
-            
-            .skill{
-                padding: 15px;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                &:hover{
-                    transform: scale(1.04);
-                }
-            }
-            .skill-text{
-                font-size: 1.35rem;
-                color: var(--text-color-grey-semi-solid);
-                filter: drop-shadow(0px 0px 1px rgb(3, 242, 255)); 
-            }
-        }
-        .aprendiendoContainer{            
-            .contenedorAprendizajesB{                
-                .softSkills{
-                    font-size: 2.3rem;
-                    font-weight: 300;
-                    padding-top: 5vh;
-                }
-                .divisor2{
-                    width: 70%;
-                    max-width: 450px;
-                    margin-top: 30px;
-                    height: 2px;
-                }
-                .palabraEspecialSoftSkills{
-                    font-weight: 500;
-                    font-size: 2.5rem;                    
-                }
-            }
-        }
-    }  
 }
 
 @media (min-width: 1000px){
-    ::-webkit-scrollbar {
-        display: none;
-     }
-     .cardProyect{
-        .info{
-            #descripcionProyecto{
-                font-size: 1rem;
-                line-height: normal;
-            }
-        }
-    }
-    .charlemos{
-        p{
-            font-size: 3.5rem;
-        }
-        .formulario{
-            margin-top: 70px;
-            .labelFormContacto{
-                width: 550px;
-                margin-bottom: 20px;
-                label{
-                    margin-bottom: 8px;
-                    font-size: 1.15rem;
-                    margin-bottom: 4px;
-                }
-                input{
-                    border-top: 0;
-                    border-left: 0;
-                    border-right: 0;
-                    font-size: 1.5rem;
-                }
-            }
-            textarea{
-                border-radius: 10px;
-                min-height: 70px;
-            }
-            .botonEnvio{
-                border-radius: 20px;
-                padding: 2px;
-                margin-top: 5px;
-                height: 40px;
-                font-size: 1.15rem;
-            }
-        }
-        .contacto{
-            svg, img{
-                height: 55px;
-                margin: 20px;
-                margin-top: 20px;
-            }
-        }
-    }
 }
 
 @media (min-width: 1250px){
-    .navbarContainer{        
-        ul{
-            width: 100vw;
-            margin-bottom: 15px;
-            padding: 10px;
-            a{              
-                li{
-                    margin-top: 12px;
-                    font-size: 1.6rem;
-                    font-weight: 400;
-                    padding: 3px 5px;
-                }
-            }
-        }        
-    } 
-    .proyectos{
-        .proyectosContainer{
-            .cardProyect{
-                .info{
-                    .botoneraProyecto{
-                        input{                    
-                            font-size: 1.1rem;
-                        }
-                    }
-                    #tituloProyecto{
-                        font-size: 1.3rem;
-                    }
-                    #descripcionProyecto{
-                        font-size: 1.1rem;
-                    }
-                }
-                
-            }
-        }
-    }
-    .skills{
-        p{
-            font-size: 7rem;
-        }
-        
-        .skillsContainer{
-            max-width: 1000px;
-            img{
-                width: 10vw;
-                margin: 10px;
-            }
-        }
-        .aprendiendoContainer{            
-            .contenedorAprendizajesB{      
-                width: 90%;
-                max-width: 1400px;
-                margin: auto;
-                max-width: 80%;          
-                .softSkills{
-                    font-size: 2.6rem;
-                    font-weight: 400;
-                    padding-top: 4vh;
-                }        
-                /*        
-                .softContainer {
-                    height: 25vh;                   
-                    p{
-                        font-size: 2.5rem;
-                    }
-                    .divisor{
-                        width: 700px;
-                        margin-top: 10px;
-                        height: 4px;
-                    }
-                }
-                */
-                .divisor2{
-                    width: 700px;
-                    margin-top: 30px;
-                    height: 2px;
-                }
-                .palabraEspecialSoftSkills{
-                    font-weight: 500;
-                    font-size: 3.2rem;                    
-                }
-            }
-        }
-    }
-    .aboutMe{
-        .texto1{
-            p{
-                font-size: 5.5rem;
-            }
-        }
-        .texto2{
-            margin-top: -10rem;
-            p{
-                font-size: 7.5rem;
-                font-weight: 500;
-            }
-        }
-        .texto3 p{
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-        .texto3 i{
-            font-size: 3.25rem;
-            font-weight: 600;
-        }
-        p.texto4{
-            font-size: 2rem;
-        }
-        p{
-            font-size: 2.25rem;
-            font-weight: 300;
-            padding-top: 4vh;
-            margin: 0 30px 1vh;
-        }
-        .cv{
-           a{
-             p{
-                font-size: 3rem;
-                font-weight: 300;
-                padding: 2px;
-                margin: 4px;
-                margin-top: 5vh;
-                border-radius: 30px;
-            }
-           }
-            
-        }
-    }
-    .presentacion{
-        .hola{
-            margin-top: 12vh;            
-            font-size: 8.5rem;
-        }
-        .soy{
-            font-size: 7rem;
-            margin-bottom: -10vh;
-            margin-top: 10vh;
-        }
-        .nombre{
-            font-size: 11rem;
-            margin-top: 100px;
-            margin-bottom: -80px;
-        }
-        .apellido{
-            font-size: 8rem;
-            margin-bottom: 20px;
-        }
-        .descripcion{
-            font-size: 4.5rem;
-            margin-bottom: 18vh;
-        }
-        .bienvenido{           
-            font-size: 6.5rem;
-            margin-top: 85vh;
-        }
-    }
 }
 
 @media (min-width: 1500px){
-    .proyectos{
-        .proyectosContainer{
-            .ih-item.square{
-                height: 350px;
-            }
-            .cardProyect{
-                .info{
-                    .botoneraProyecto{
-                        margin-top: 300px;
-                        input{                    
-                            font-size: 1.1rem;
-                        }
-                    }
-                    #tituloProyecto{
-                        font-size: 1.5rem;
-                    }
-                    #descripcionProyecto{
-                        font-size: 1.3rem;
-                        font-weight: 300;
-                    }
-                }
-                
-            }
-        }
-    }
 
 }
 
