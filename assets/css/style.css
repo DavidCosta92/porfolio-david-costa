@@ -507,22 +507,25 @@
     width: 90%;
   }
   .navbarContainer ul a li {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .aboutMe .tituloContainer .texto1 p {
     font-size: 2.5rem;
   }
   .aboutMe .tituloContainer .texto2 p {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
   .aboutMe .textContainer p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
   .aboutMe .textContainer .texto3 i {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .aboutMe .textContainer .cv a p {
     font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
   }
   .skills .skillsContainer .skill {
     height: 70px;
@@ -533,15 +536,15 @@
     margin: 5px;
   }
   .skills .skillsContainer .skill .skill-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     filter: none;
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
-    padding-top: 30px;
-    font-size: 1.2rem;
+    padding-top: 25px;
+    font-size: 1.27rem;
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills .palabraEspecialSoftSkills {
-    font-size: 1.25rem;
+    font-size: 1.27rem;
   }
   .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
     margin-top: 30px;
@@ -554,6 +557,9 @@
   }
   .proyectos .proyectosContainer .ih-item.square {
     height: auto;
+  }
+  .proyectos .proyectosContainer .ih-item.square a .info .botoneraProyecto {
+    margin-top: 195px;
   }
   .charlemos {
     padding: 0;
