@@ -58,22 +58,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Signika Negative', sans-serif;
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
 
-    /*
-    .snapScrollWrapper {
-        scroll-behavior: smooth;
-        height: 100vh;
-        overflow: auto;  
-        scroll-snap-type: y mandatory;  
-        .snapScrollSection {
-            scroll-snap-align: start;
-          }
-      }
-    */    
     .sectionContainer{
         margin: auto;
         width: 80%;
         max-width: 1200px;
+        .tituloContainer{            
+            height: 100px;
+            margin-top: 70px;
+            font-size: 3.5rem;
+        }
     }
     .navbarContainer{
         width: 100vw;
@@ -82,17 +80,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /*
-        position: sticky;
-        top: 95vh; 
-        height: 0;
-        */
         background: transparent;
         backdrop-filter: blur(10px);
         background-color: rgba(3, 92, 127, 0.3);
         border-bottom: 2px solid rgba(3, 92, 127, 0.5);
         position: fixed;
-        
+        opacity: 0;
+        animation: fadein 2s 2s forwards;
+
         ul{
             margin: 0;
             padding: 0;
@@ -128,7 +123,9 @@
         }        
     } 
     .presentacion{
-        background-color: var(--section-bg-color-1);
+        // background-color: var(--section-bg-color-1);
+        
+        background: var(--section-bg-color-1);
         text-align: center;
         min-height: 100vh;
         display: flex;
@@ -165,8 +162,8 @@
         }
     }
     .aboutMe{
-        height: 100vh;
-        background-color: var(--section-bg-color-2);
+        min-height: 100vh;
+        background: var(--section-bg-color-2);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -192,11 +189,10 @@
 
         }
         .textContainer{     
-            padding-top: 10vh;           
+            padding-top: 5vh;           
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 70vh;
         }
         .texto3 p{
             color: var(--text-title-color-dark-blue);
@@ -256,7 +252,7 @@
     }
     .skills{
         min-height: 100vh;
-        background-color: var(--section-bg-color-1);
+        background: var(--section-bg-color-1);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -271,8 +267,6 @@
         span.textoContainer{ 
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            height: 70vh;
             min-height: 600px;
 
             .skillsContainer{ 
@@ -355,7 +349,7 @@
         padding: 0 20px;
         text-align: center;
         p{
-            padding-top: 5rem;
+            padding-top: 4.5rem;
             padding-bottom: 1rem;
             color: var(--text-color-white-semi-solid-075);
             font-size: 2.75rem;
@@ -456,10 +450,10 @@
     .charlemos{
         background-color: var(--section-bg-color-1);
         min-height: 100vh;
-        padding: 0 10px;
+        padding: 0;
         text-align: center;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -470,7 +464,7 @@
         .formulario{
             z-index: 1000;
             position: relative;
-            margin-top: 70px;
+            margin-top: 1vh;
             .labelFormContacto{
                 display: flex;
                 flex-direction: column;
