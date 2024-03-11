@@ -243,7 +243,6 @@
   text-align: center;
 }
 * .skills .tituloContainer p.titulo {
-  line-height: 0.5;
   font-size: 3.5rem;
   color: var(--text-color-white-semi-solid-075);
 }
@@ -252,6 +251,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 70vh;
+  min-height: 600px;
 }
 * .skills span.textoContainer .skillsContainer {
   display: flex;
@@ -271,8 +271,7 @@
   border: 1px solid var(--text-title-color-light-blue);
 }
 * .skills .skillsContainer .skill {
-  padding: 10px;
-  height: 135px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -500,6 +499,66 @@
 }
 
 /* Medias queries  */
+@media (max-width: 650px) {
+  *.sectionContainer {
+    width: 90%;
+  }
+  .navbarContainer ul {
+    width: 90%;
+  }
+  .navbarContainer ul a li {
+    font-size: 1rem;
+  }
+  .aboutMe .tituloContainer .texto1 p {
+    font-size: 2.5rem;
+  }
+  .aboutMe .tituloContainer .texto2 p {
+    font-size: 3.5rem;
+  }
+  .aboutMe .textContainer p {
+    font-size: 1.1rem;
+  }
+  .aboutMe .textContainer .texto3 i {
+    font-size: 1.25rem;
+  }
+  .aboutMe .textContainer .cv a p {
+    font-size: 1.5rem;
+  }
+  .skills .skillsContainer .skill {
+    height: 70px;
+  }
+  .skills .skillsContainer .skill img {
+    width: 35px;
+    min-width: 35px;
+    margin: 5px;
+  }
+  .skills .skillsContainer .skill .skill-text {
+    font-size: 0.8rem;
+    filter: none;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills {
+    padding-top: 30px;
+    font-size: 1.2rem;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .softSkills .palabraEspecialSoftSkills {
+    font-size: 1.25rem;
+  }
+  .skills .aprendiendoContainer .contenedorAprendizajesB .divisor2 {
+    margin-top: 30px;
+  }
+  .proyectos .sectionContainer > p {
+    padding-top: 4rem;
+  }
+  .proyectos .proyectosContainer {
+    padding: 0;
+  }
+  .proyectos .proyectosContainer .ih-item.square {
+    height: auto;
+  }
+  .charlemos {
+    padding: 0;
+  }
+}
 /* Medias queries  */
 
 /*# sourceMappingURL=style.css.map */

@@ -264,7 +264,6 @@
         text-align: center;        
         .tituloContainer{
             p.titulo{
-                line-height: 0.5;
                 font-size: 3.5rem;
                 color: var(--text-color-white-semi-solid-075);
             }
@@ -274,6 +273,7 @@
             flex-direction: column;
             justify-content: space-around;
             height: 70vh;
+            min-height: 600px;
 
             .skillsContainer{ 
                 display: flex;
@@ -299,8 +299,7 @@
             // max-width: 800px;
             border: 1px solid var(--text-title-color-light-blue);
             .skill{
-                padding: 10px;
-                height: 135px;
+                height: 100px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -544,7 +543,110 @@
 }
 
 /* Medias queries  */
-@media (max-height: 650px){
+@media (max-width: 650px){
+    *.sectionContainer{
+        width: 90%;
+    }
+    .navbarContainer{
+        ul{
+            width: 90%;
+            a{
+                li{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .aboutMe{
+        .tituloContainer{
+            .texto1 p{
+                font-size: 2.5rem;
+            }
+            .texto2 p{
+                font-size: 3.5rem;
+
+            }
+        }
+        .textContainer{
+            p{
+                font-size: 1.1rem;
+            }
+            .texto3 i{
+                font-size: 1.25rem;
+            }
+            .cv{
+                a{
+                    p{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+            
+    }
+    .skills{
+        .tituloContainer{
+
+        }
+        .skillsContainer{
+            .skill{
+                height: 70px;
+                img{
+                    width: 35px;
+                    min-width: 35px;
+                    margin: 5px;
+
+
+                }
+                .skill-text{
+                    font-size: 0.8rem;
+                    filter: none;
+                }
+            }
+        }
+        .aprendiendoContainer{
+            .contenedorAprendizajesB{
+                .softSkills{
+                    padding-top: 30px;
+                    font-size: 1.2rem;
+                    .palabraEspecialSoftSkills{
+                        font-size: 1.25rem;
+
+                    }
+                }
+                .divisor2{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .proyectos{
+        .sectionContainer>p{
+            padding-top: 4rem;
+        }
+        .proyectosContainer{
+            padding: 0;
+            .ih-item.square{
+                height: auto;
+                a{
+                    .img{
+                        img{
+
+                        }
+                    }
+                    .info{
+
+                    }
+                }
+            }            
+        }
+    }
+    .charlemos{
+        padding: 0;
+    }
+
+
 }
 
 @media (max-width: 800px){
