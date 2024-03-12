@@ -86,6 +86,9 @@
   opacity: 0;
   animation: fadein 2s 2s forwards;
 }
+* .navbarContainer .btnIdioma img {
+  height: 30px;
+}
 * .navbarContainer ul {
   margin: 0;
   padding: 0;
