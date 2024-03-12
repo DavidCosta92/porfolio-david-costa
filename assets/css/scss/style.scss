@@ -73,7 +73,6 @@
             font-size: 3.5rem;
         }
     }
-    
     .navbarContainer{
         width: 100vw;
         z-index: 100;
@@ -87,14 +86,17 @@
         border-bottom: 2px solid rgba(3, 92, 127, 0.5);
         position: fixed;
         opacity: 0;
-        animation: fadein 2s 2s forwards;
-
-        .btnIdioma{
+        animation: fadein 2s 2s forwards;       
+        
+        div#btnIdioma{
+            display: flex;
+            #banderaEsp{
+                opacity: 0;
+            }
             img{
                 height: 30px;
             }
-        }
-        
+        } 
         ul{
             margin: 0;
             padding: 0;

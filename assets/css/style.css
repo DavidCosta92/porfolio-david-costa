@@ -86,7 +86,13 @@
   opacity: 0;
   animation: fadein 2s 2s forwards;
 }
-* .navbarContainer .btnIdioma img {
+* .navbarContainer div#btnIdioma {
+  display: flex;
+}
+* .navbarContainer div#btnIdioma #banderaEsp {
+  opacity: 0;
+}
+* .navbarContainer div#btnIdioma img {
   height: 30px;
 }
 * .navbarContainer ul {

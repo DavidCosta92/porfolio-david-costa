@@ -1,0 +1,48 @@
+{
+    "navbar" : {
+        "sobreMi" : "About",
+        "skills" : "Skills",
+        "proyectos" : "Proyects",
+        "charlemos" : "Lets chat"
+    },
+    "presentacion" : {
+        "soy" : "I'm",
+        "rol" : "Fullstack developer"
+    },
+    "aboutMe" : {
+        "sobre" : "About",
+        "mi" : "Me",
+        "texto1" : "I am on the verge of obtaining a degree in Software Development Technician, planning to continue with a bachelor's degree, and have been working on projects for the past 2 years. I am focused on Backend development with JAVA and Spring, in addition to having knowledge in Python, Django, Flask, Node JS, and React JS. I also have experience with SQL and NoSQL databases.",
+        "texto2" : "My passion is to create and develop new products, optimize and solve problems. I want to change the world through code, and I would love to impact millions of lives!",
+        "texto3" : "If you think we can do things together, I would love to meet you!",
+        "verCv" : "Would you like to see my resume?"
+    },
+    "skills" : {
+        "textoComplejo1" : "Additionally, I am currently pursuing a technical degree that is  <span class='palabraEspecialSoftSkills' >strongly oriented towards teamwork and the constant delivery of improvements</span>. Through agile methodologies, we are trained to continuously iterate over the product, seeking new incremental updates and improving our adaptation to changes.",
+        "textoComplejo2" : "This study method helps strengthen my skills in <span class='palabraEspecialSoftSkills'>teamwork, empathy, assertive communication, and leadership"
+    },
+    "proyectos" : {
+        "titulo" : "Recent projects",
+        "pr1-titulo" : "Embarcadero app (Developing..)",
+        "pr1-descripcion" : "System for managing boats, shifts, and rescue teams at each dam in the province, allowing the maintenance of a record of boats that access, affected staff, and other vital data, for statistics and analysis. The project is in an early stage of development. At this stage, the survey, analysis, and design of the solution have already been carried out. Technologies: React Js, Java, Spring, MySQL, Swagger, Spring security, JWT, Mockito.",
+        "pr2-titulo" : "API RESTFul EduProject JAVA - Springboot",
+        "pr2-descripcion" : "System designed for use in educational academia, for managing student enrollments in subjects. Backend developed in Java 17, with Spring Boot 3, and with persistence in PostgreSQL. Use of Spring Security JWT for user management and Swagger for documentation. Application deployed on Railway, and database on FL0.",
+        "pr3-titulo" : "API RESTFul 'Pied Piper' JAVA - Springboot",
+        "pr3-descripcion" : "This API allows managing a contact agenda, where contacts can be added, modified, and retrieved, handling information such as Name, Phone, and Address. Developed in JAVA 17, Spring Boot 3, PostgreSQL, with user management using JWT, Spring Security, and password reset via email. Integrated testing using test containers and Docker. Documentation with Swagger. Deployed on Railway and FL0.",
+        "pr4-titulo" : "Backend NODE JS ",
+        "pr4-descripcion" : "E-commerce created as part of my training in Node.js. I use Express, Mongo, Sockets, Swagger, Handlebars, Passport, Winston, among others. Focused solely on the backend, so the front only shows the minimum and essential to visualize the information.",
+        "pr5-titulo" : "One Drop Mobile",
+        "pr5-descripcion" : "One Drop is a mobile application for Android, developed in JAVA. Its function is to store, organize, and visualize glucose, blood pressure, weight, and other analysis records, focusing on diabetic patients. Created with educational purposes as part of a Technician's degree, currently in progress. Developed in JAVA, using Android API 31 and SQLite. Born in a team, following the Scrum methodology, where I was responsible for the Java logic and database design.",
+        "pr6-titulo" : "One Drop Web",
+        "pr6-descripcion" : "One Drop is an application designed to store and organize glucose records for diabetic patients. Created with educational purposes as part of a Web Development Technician course currently in progress. Developed in Python, Django, and Angular. Created in an agile team, where my main role was as Backend dev",
+        "pr7-titulo" : "Mecantronic",
+        "pr7-descripcion" : "Team-created landing page for Mecantronic, where my role was developing the frontend application using React JS. The team utilized agile methodologies and various tools such as Figma, Notion, GitHub, and others to efficiently and harmoniously complete the project. Developed with React JS, Tailwind, Swiper, Toastify, etc."
+    },
+    "charlemos" : {
+        "titulo" : "Would you like to chat?",
+        "nombre" : "Name",
+        "texto" : "What would you like to tell me?",
+        "btnEnviar" : "Send"
+    }
+    
+}

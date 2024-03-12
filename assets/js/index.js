@@ -1,6 +1,49 @@
 // @ts-nocheck
 
 
+// casos especiales, BOTON ENVIAR EN FORMULARIO, CAMBIAR LINK DE DESCARGA DE CV
+
+const btnChangeLeng = document.getElementById("btnIdioma")
+btnChangeLeng.addEventListener("click", (e)=>{
+    changeLeng(e.target.parentElement.dataset.leng)
+})
+
+
+const textsToChange = document.querySelectorAll("[data-lengvalue]")
+
+const changeLeng = async (leng) =>{    
+    const req = await fetch(`./assets/js/textos-${leng}.json`)
+    const textsTraslated = await req.json()
+
+    const banderaEsp = document.getElementById("banderaEsp")
+    const banderaEng = document.getElementById("banderaEng")
+
+    if(leng == "eng"){
+        banderaEsp.setAttribute("style", "opacity:1")
+        banderaEng.setAttribute("style", "opacity:0")
+    } else {
+        banderaEsp.setAttribute("style", "opacity:0")
+        banderaEng.setAttribute("style", "opacity:1")
+    }
+
+
+    for (const textToChange of textsToChange){
+        const section = textToChange.dataset.sectionlang
+        const value = textToChange.dataset.lengvalue
+        if(value == "btnEnviar"){
+            const btnSend = document.getElementById("btnEnviar")            
+            btnSend.setAttribute("value", leng=="esp"? "Enviar" : "Send")        
+        }else if(value == "verCv"){
+            const linkCV1 = document.getElementById("linkCv1")   
+            const linkCV2 = document.getElementById("linkCv2")      
+            let cv = `./assets/Fullstack Developer JAVA-MERN - COSTA DAVID - Cv${leng=="eng"?" - ENG" :""}.pdf`
+            linkCV1.setAttribute("href",cv)
+            linkCV2.setAttribute("href",cv)
+        } else{
+            textToChange.innerHTML = textsTraslated[section][value]
+        }
+    }
+}
 
 // esta funcion comprueba si un elemento esta visible en pantalla
 ///  function isVisible(elm) {
