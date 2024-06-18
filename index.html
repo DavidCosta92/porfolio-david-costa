@@ -154,111 +154,577 @@
     <section class="proyectos" id="proyectos">
         <div class="sectionContainer">
             <p data-sectionlang="proyectos" data-lengvalue = "titulo" >Ultimos Proyectos</p>    
-            <div class="proyectosContainer">                
+            <div class="proyectosContainer">     
+
                 <!-- Fullstack Embarcadero -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1.2"><a>
-                    <div class="img"><img src="./assets/imagenes/embarcadero app.png" alt="Embaracdero app "></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://embarcadero-app-front.vercel.app/');" />
-                            <input type="button" value="Docs" onclick="javascript:window.open('https://embarcaderoapp-production.up.railway.app/docs/swagger-ui/index.html');" />
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/EmbarcaderoApp');" />                            
-                        </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >Embarcadero app (en desarrollo..)</p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >Sistema para gestionar las embarcaciones, las guardias y los equipos de rescate, permite mantener un registro de las embarcaciones que acceden, el personal afectado y otros datos vitales, para estadistica y analisis. El proyecto esta en una etapa de desarrollo del primer MVP. En esta etapa, ya se realizo el relevamiento, analisis y diseño de la solucion propuesta, junto a su codificacion Web y testeo, usando tecnologias como: React Js, Java, Spring, MySQL, Swagger, Spring security, JWT. Deploy front en vercel, railway y clevercloud.</p>
-                    </div>
-                    </a>
-                </div>         
-                <!-- API JAM -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1.2"><a>
-                    <div class="img"><img src="./assets/imagenes/Academia JAM.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/jam2023-java.git');" />
-
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://jam2023-java-production.up.railway.app/course/');" />
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/embarcadero app.png" alt="Embaracdero app ">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >Embarcadero app (en desarrollo..)</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>
                             
-                            <input type="button" value="Docs" onclick="javascript:window.open('https://jam2023-java-production.up.railway.app/docs/swagger-ui/index.html');" />
-
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
                         </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr2-titulo" >API RESTFul EduProject en JAVA - Springboot</p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr2-descripcion">Sistema para usarse en academia educativa, para el manejo de inscripciones de estudiantes a materias. Backend desarrollado en Java 17, con Springboot 3, y con persistencia en postgresql.  Uso de spring security JWT para manejo de usuarios y Swagger para documentar. Aplicacion desplegada en Railway, y base de datos en render</p>
-                    </div>
-                    </a>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >Sistema para gestionar las embarcaciones, las guardias y los equipos de rescate, permite mantener un registro de las embarcaciones que acceden, el personal afectado y otros datos vitales, para estadistica y analisis. El proyecto esta en una etapa de desarrollo del primer MVP. En esta etapa, ya se realizo el relevamiento, analisis y diseño de la solucion propuesta, junto a su codificacion Web y testeo, usando tecnologias como: React Js, Java, Spring, MySQL, Swagger, Spring security, JWT. Deploy front en vercel, railway y clevercloud.</p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://github.com/DavidCosta92/EmbarcaderoApp');">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" ></path></svg>
+                                <p class="btnText">
+                                    Repo
+                                </p>
+                            </button>
+                            <button onclick="javascript:window.open('https://embarcaderoapp-production.up.railway.app/docs/swagger-ui/index.html');">    
+                                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p class="btnText">
+                                    Docs
+                                </p>
+                            </button>
+                            <button onclick="javascript:window.open('https://embarcadero-app-front.vercel.app/');">
+                                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> 
+                                <p class="btnText">
+                                    Deploy
+                                </p>
+                            </button>
+                      
+                        </span>  
+                    </span>
                 </div>
+
+                <!-- API JAM -->
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/Academia JAM.png" alt="Academia JAM">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >API RESTFul EduProject en JAVA - Springboot</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>                            
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
+                        </span>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >Sistema para usarse en academia educativa, para el manejo de inscripciones de estudiantes a materias. Backend desarrollado en Java 17, con Springboot 3, y con persistencia en postgresql.  Uso de spring security JWT para manejo de usuarios y Swagger para documentar. Aplicacion desplegada en Railway, y base de datos en render</p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://github.com/DavidCosta92/jam2023-java.git');">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" ></path></svg>
+                                <p class="btnText">
+                                    Repo
+                                </p>
+                            </button>
+                            <button onclick="javascript:window.open('https://jam2023-java-production.up.railway.app/docs/swagger-ui/index.html');">    
+                                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p class="btnText">
+                                    Docs
+                                </p>
+                            </button>
+                            <button onclick="javascript:window.open('https://jam2023-java-production.up.railway.app/course/');">
+                                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> 
+                                <p class="btnText">
+                                    Deploy
+                                </p>
+                            </button>
+                      
+                        </span>  
+                    </span>
+                </div>
+
                 <!-- ONE DROP MOBILE JAVA-->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1.4"><a>
-                    <div class="img"><img src="./assets/imagenes/app-mobile-android-java.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/OneDrop-ISPC-PP/APP-OneDrop.git');" />
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/app-mobile-android-java.png" alt="One Drop Mobile">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >One Drop Mobile</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>                            
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
                         </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr5-titulo" >One Drop Mobile</p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr5-descripcion">One drop, es una aplicacion mobile para Android, desarrollada en JAVA, forma parte del ecosistema OneDrop. Su funcion es gestionar variables medicas, para una rapida y facil puesta en comun de la informacion con el equipo medico. Creada con fines educativos como parte de una Tecnicatura, nacio en equipo, siguiendo metodologia scrum, donde me encargue de la parte logica de Java en android y el diseño y codificacion completa del backend en spring. Creada usando API 31 de android. 
-                        </p>
-                    </div>
-                    </a>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >One drop, es una aplicacion mobile para Android, desarrollada en JAVA, forma parte del ecosistema OneDrop. Su funcion es gestionar variables medicas, para una rapida y facil puesta en comun de la informacion con el equipo medico. Creada con fines educativos como parte de una Tecnicatura, nacio en equipo, siguiendo metodologia scrum, donde me encargue de la parte logica de Java en android y el diseño y codificacion completa del backend en spring. Creada usando API 31 de android. </p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://github.com/OneDrop-ISPC-PP/APP-OneDrop.git');">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" ></path></svg>
+                                <p class="btnText">
+                                    Repo
+                                </p>
+                            </button>                      
+                        </span>  
+                    </span>
                 </div>
+
                 <!-- ONE DROP WEB-->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1.4"><a>
-                    <div class="img"><img src="./assets/imagenes/one-drop-web.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <!-- 
-                                <input type="button" value="App" onclick="javascript:window.open('https://onedropapp-grupo30.netlify.app/');" />
-                            -->
-                                <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/OneDrop-ISPC-PP/APP-OneDrop.git');" />
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/one-drop-web.png" alt="One Drop Web">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >One Drop Web</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>                            
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
                         </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr6-titulo" >One Drop Web</p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr6-descripcion">One drop, es una aplicacion para gestionar variables medicas, para una rapida y facil puesta en comun de la informacion con el equipo medico. Creada con fines educativos como parte de una Tecnicatura. Desarrollada en angular y conectada a backend desarrollado en Spring. Creada en un equipo agil, donde mi rol principal fue desarrollador backend, me encargue del diseño y codificacion completa del backend en spring.
-                        </p>
-                    </div>
-                    </a>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >One drop, es una aplicacion para gestionar variables medicas, para una rapida y facil puesta en comun de la informacion con el equipo medico. Creada con fines educativos como parte de una Tecnicatura. Desarrollada en angular y conectada a backend desarrollado en Spring. Creada en un equipo agil, donde mi rol principal fue desarrollador backend, me encargue del diseño y codificacion completa del backend en spring.</p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://github.com/OneDrop-ISPC-PP/APP-OneDrop.git');">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" ></path></svg>
+                                <p class="btnText">
+                                    Repo
+                                </p>
+                            </button>            
+                        </span>  
+                    </span>
                 </div>
-                <!-- API JAVA -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1.2"><a>
-                    <div class="img"><img src="./assets/imagenes/API2.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/ContactsApp');" />                        
 
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://contactsapp-production-56b0.up.railway.app/contacts/');" />
+                <!-- API JAVA -->                                
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/API2.png" alt="API RESTFul ">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >API RESTFul "Pied Piper" en JAVA - Springboot</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>                            
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
+                        </span>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >Esta API, permite manejar una agenda de contactos, se pueden agregar, modificar y obtener contactos, manejando información como Nombre, Teléfono y Dirección. Desarrolada en JAVA 17, Springboot 3, posgresql, manejo de usuarios con JWT, Spring security, restauracion de passwords mediante emails. Testing integrados usando con test containter y docker. Docs con Swagger. Despliegue en Railway y FL0.</p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://github.com/DavidCosta92/ContactsApp');">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" ></path></svg>
+                                <p class="btnText">
+                                    Repo
+                                </p>
+                            </button>
+                            <button onclick="javascript:window.open('https://contactsapp-production-56b0.up.railway.app/docs/swagger-ui/index.html');">    
+                                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 10.4V20M12 10.4C12 8.15979 12 7.03969 11.564 6.18404C11.1805 5.43139 10.5686 4.81947 9.81596 4.43597C8.96031 4 7.84021 4 5.6 4H4.6C4.03995 4 3.75992 4 3.54601 4.10899C3.35785 4.20487 3.20487 4.35785 3.10899 4.54601C3 4.75992 3 5.03995 3 5.6V16.4C3 16.9601 3 17.2401 3.10899 17.454C3.20487 17.6422 3.35785 17.7951 3.54601 17.891C3.75992 18 4.03995 18 4.6 18H7.54668C8.08687 18 8.35696 18 8.61814 18.0466C8.84995 18.0879 9.0761 18.1563 9.29191 18.2506C9.53504 18.3567 9.75977 18.5065 10.2092 18.8062L12 20M12 10.4C12 8.15979 12 7.03969 12.436 6.18404C12.8195 5.43139 13.4314 4.81947 14.184 4.43597C15.0397 4 16.1598 4 18.4 4H19.4C19.9601 4 20.2401 4 20.454 4.10899C20.6422 4.20487 20.7951 4.35785 20.891 4.54601C21 4.75992 21 5.03995 21 5.6V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H16.4533C15.9131 18 15.643 18 15.3819 18.0466C15.15 18.0879 14.9239 18.1563 14.7081 18.2506C14.465 18.3567 14.2402 18.5065 13.7908 18.8062L12 20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p class="btnText">
+                                    Docs
+                                </p>
+                            </button>
+                            <button onclick="javascript:window.open('https://contactsapp-production-56b0.up.railway.app/contacts/');">
+                                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> 
+                                <p class="btnText">
+                                    Deploy
+                                </p>
+                            </button>                      
+                        </span>  
+                    </span>
+                </div>
 
-                            <input type="button" value="Docs" onclick="javascript:window.open('https://contactsapp-production-56b0.up.railway.app/docs/swagger-ui/index.html');" />
+                <!-- MEC -->                                                
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/mec.svg" alt="Mecantronic">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >Mecantronic</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>                            
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
                         </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr3-titulo" >API RESTFul "Pied Piper" en JAVA - Springboot</p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr3-descripcion">Esta API, permite manejar una agenda de contactos, se pueden agregar, modificar y obtener contactos, manejando información como Nombre, Teléfono y Dirección. Desarrolada en JAVA 17, Springboot 3, posgresql, manejo de usuarios con JWT, Spring security, restauracion de passwords mediante emails. Testing integrados usando con test containter y docker. Docs con Swagger. Despliegue en Railway y FL0.</p>
-                    </div>
-                    </a>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >Landing page creada en equipo, para la empresa Mecantronic, en la cual mi rol fue el desarrollo de la aplicacion en el codigo frontend en React JS. El equipo utilizo metodologias agiles, y varias herramientas como figma, notion, github y otros, para poder realizar el proyecto de manera armonica y de la forma mas eficiente posible.Desarrollado con React Js, Tailwind, Swiper, toastify, etc.</p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://mecantronic.com.ar/');">
+                                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> 
+                                <p class="btnText">
+                                    Deploy
+                                </p>
+                            </button>                      
+                        </span>  
+                    </span>
                 </div>
-                <!-- MEC -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1.7"><a>
-                    <div class="img"><img src="./assets/imagenes/mec.svg" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <input type="button" value="Deploy" onclick="javascript:window.open('https://mecantronic.com.ar/','','width=900,height=600,left=50,top=50,toolbar=yes');" />
+
+                <!-- NODE JS -->                                           
+                <div class="proyectContainer">
+                    <span class="proyectImg">
+                        <img src="./assets/imagenes/node-tp-coder.png" alt="Backend NODE JS">
+                    </span>
+                    <span class="proyectInfo">
+                        <p id="proyectTitle"  data-sectionlang="proyectos" data-lengvalue = "pr1-titulo" >Backend NODE JS</p>
+                        <span class="keywordsContainer">
+                            <div class="keyword">
+                                <svg height="18px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 511.998 511.998" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
+                                        c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
+                                        c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
+                                        c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
+                                        c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
+                                    <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
+                                        c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
+                                        c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
+                                        c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
+                                        c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
+                                </g>
+                                <g>
+                                    <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
+                                        c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
+                                        c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
+                                        c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
+                                        s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
+                                    <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
+                                        c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
+                                        c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
+                                        c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
+                                    <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
+                                        c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
+                                        c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
+                                        c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
+                                        c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
+                                        c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
+                                    <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
+                                        c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
+                                        c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
+                                        s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
+                                        c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
+                                    <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
+                                        c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
+                                        c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
+                                        c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
+                                        c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
+                                        c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
+                                        />
+                                    <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
+                                        c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
+                                        c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
+                                        c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
+                                </g>
+                                </svg>
+                                <p>Java</p>
+                            </div>                            
+                            <div class="keyword">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="18px" height="18px"><path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"/><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"/></svg>
+                                <p>Spring</p>
+                            </div>
                         </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr7-titulo" >Mecantronic</p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr7-descripcion">Landing page creada en equipo, para la empresa Mecantronic, en la cual mi rol fue el desarrollo de la aplicacion en el codigo frontend en React JS. El equipo utilizo metodologias agiles, y varias herramientas como figma, notion, github y otros, para poder realizar el proyecto de manera armonica y de la forma mas eficiente posible.Desarrollado con React Js, Tailwind, Swiper, toastify, etc.
-                        </p>
-                    </div>
-                    </a>
-                </div>
-                <!-- NODE JS -->
-                <div class="ih-item square colored effect6 from_top_and_bottom cardProyect animada" data-animation="right-1"><a>
-                    <div class="img"><img src="./assets/imagenes/node-tp-coder.png" alt="img"></div>
-                    <div class="info">
-                        <span class="botoneraProyecto">
-                            <!-- 
-                                <input type="button" value="Deploy" onclick="javascript:window.open('https://backend-ecommerce-nodejs-production.up.railway.app/');" />
-                                <input type="button" value="Docs" onclick="javascript:window.open('https://backend-ecommerce-nodejs-production.up.railway.app/api/docs');" />
-                            -->
-                            <input type="button" value="Repo" onclick="javascript:window.open('https://github.com/DavidCosta92/Trabajo-Final-Backend-NodeJS-Coderhouse.git');" />
-                        </span>
-                        <p id="tituloProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr4-titulo" >Backend NODE JS </p>
-                        <p id="descripcionProyecto"  data-sectionlang="proyectos" data-lengvalue = "pr4-descripcion">Ecomerce creado como parte de mi formacion en Node Js. Uso Express, Mongo, Sockets, Swagger, Handlebars, passport, Winston, entre otros. Enfocado solo en el backend, por lo que front solo muestra lo minimo e indispensable para visualizar la informacion. </p>
-                    </div>
-                    </a>
+                        <p id="proyectText"  data-sectionlang="proyectos" data-lengvalue = "pr1-descripcion" >Ecomerce creado como parte de mi formacion en Node Js. Uso Express, Mongo, Sockets, Swagger, Handlebars, passport, Winston, entre otros. Enfocado solo en el backend, por lo que front solo muestra lo minimo e indispensable para visualizar la informacion.</p>                 
+                        <span class="proyectBtns">
+                            <button onclick="javascript:window.open('https://github.com/DavidCosta92/Trabajo-Final-Backend-NodeJS-Coderhouse.git');">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" ></path></svg>
+                                <p class="btnText">
+                                    Repo
+                                </p>
+                            </button>                 
+                        </span>  
+                    </span>
                 </div>
             </div>   
         </div>       
