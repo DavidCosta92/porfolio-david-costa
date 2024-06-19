@@ -379,7 +379,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectImg img {
@@ -388,13 +388,14 @@
   border-radius: 5px;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo {
-  width: 65%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .keywordsContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -402,17 +403,20 @@
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .keywordsContainer .keyword {
   display: flex;
   justify-content: space-around;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.281);
+  height: 30px;
+  padding: 5px;
   border-radius: 10px;
   align-items: center;
-  padding: 5px;
+  background-color: var(--text-title-color-dark-blue);
   border: 1px solid var(--text-title-color-light-blue);
   filter: drop-shadow(0 0 3px var(--text-title-color-light-blue));
 }
+* .proyectos .proyectosContainer .proyectContainer .proyectInfo .keywordsContainer .keyword svg {
+  margin: 2px;
+}
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .keywordsContainer .keyword p {
-  font-size: 0.7rem;
-  margin: 0;
+  font-size: 0.75rem;
+  margin: 2px;
   padding: 0;
   margin-left: 5px;
 }
@@ -436,6 +440,19 @@
   border: none;
   width: 65px;
   height: 30px;
+  border: 1px solid var(--text-title-color-light-blue);
+  filter: drop-shadow(0 0 3px var(--text-title-color-light-blue));
+  /*
+
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.281);
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid var(--text-title-color-light-blue);
+  filter: drop-shadow(0 0 3px var(--text-title-color-light-blue));*/
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .proyectBtns button .btnText {
   font-size: 0.75rem;
