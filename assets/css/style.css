@@ -378,7 +378,6 @@
 * .proyectos .proyectosContainer .proyectContainer .proyectImg {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 40%;
   height: 100%;
 }
@@ -386,6 +385,8 @@
   width: 100%;
   max-width: 500px;
   border-radius: 5px;
+  max-height: 400px;
+  object-fit: fill;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo {
   width: 55%;
@@ -396,16 +397,16 @@
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .keywordsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .keywordsContainer .keyword {
   display: flex;
   justify-content: space-around;
-  height: 30px;
-  padding: 5px;
-  border-radius: 10px;
+  height: 27px;
+  padding: 3px;
+  border-radius: 6px;
   align-items: center;
   background-color: var(--text-title-color-dark-blue);
   border: 1px solid var(--text-title-color-light-blue);
