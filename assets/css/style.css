@@ -369,6 +369,7 @@
   gap: 15px;
   margin-bottom: 50px;
   text-align: justify;
+  max-width: 1000px;
 }
 * .proyectos .proyectosContainer .proyectContainer:hover .proyectImg img {
   /*
@@ -378,18 +379,20 @@
 * .proyectos .proyectosContainer .proyectContainer .proyectImg {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 40%;
   height: 100%;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectImg img {
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
   border-radius: 5px;
-  max-height: 400px;
+  max-height: 275px;
   object-fit: fill;
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo {
   width: 55%;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -443,17 +446,6 @@
   height: 30px;
   border: 1px solid var(--text-title-color-light-blue);
   filter: drop-shadow(0 0 3px var(--text-title-color-light-blue));
-  /*
-
-  display: flex;
-  justify-content: space-around;
-  height: 30px;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.281);
-  border-radius: 10px;
-  align-items: center;
-  border: 1px solid var(--text-title-color-light-blue);
-  filter: drop-shadow(0 0 3px var(--text-title-color-light-blue));*/
 }
 * .proyectos .proyectosContainer .proyectContainer .proyectInfo .proyectBtns button .btnText {
   font-size: 0.75rem;
@@ -680,6 +672,31 @@
   }
   .charlemos {
     padding: 0;
+  }
+}
+@media (max-width: 800px) {
+  .proyectos .proyectosContainer .proyectContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .proyectos .proyectosContainer .proyectContainer:hover .proyectImg img {
+    /*
+    border-radius: 50px;
+    */
+  }
+  .proyectos .proyectosContainer .proyectContainer .proyectImg {
+    width: 80%;
+  }
+  .proyectos .proyectosContainer .proyectContainer .proyectImg img {
+    max-width: none;
+    max-height: none;
+    height: 200px;
+    object-fit: cover;
+  }
+  .proyectos .proyectosContainer .proyectContainer .proyectInfo {
+    width: 80%;
   }
 }
 /* Medias queries  */
