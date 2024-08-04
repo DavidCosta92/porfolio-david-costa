@@ -30,6 +30,8 @@ const changeLeng = async (leng) =>{
     for (const textToChange of textsToChange){
         const section = textToChange.dataset.sectionlang
         const value = textToChange.dataset.lengvalue
+
+
         if(value == "btnEnviar"){
             const btnSend = document.getElementById("btnEnviar")            
             btnSend.setAttribute("value", leng=="esp"? "Enviar" : "Send")        
@@ -39,7 +41,7 @@ const changeLeng = async (leng) =>{
             let cv = `./assets/Curriculum DAVID COSTA - Tec. Desarrollo web - Fullstack JAVA${leng=="eng"?" - ENG" :""}.pdf`
             linkCV1.setAttribute("href",cv)
             linkCV2.setAttribute("href",cv)
-            // assets\Curriculum DAVID COSTA - Tec. Desarrollo web - Fullstack JAVA.pdf
+            textToChange.innerHTML = textsTraslated[section][value]
         } else{
             textToChange.innerHTML = textsTraslated[section][value]
         }
