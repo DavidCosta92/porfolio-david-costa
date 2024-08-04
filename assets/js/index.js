@@ -36,9 +36,10 @@ const changeLeng = async (leng) =>{
         }else if(value == "verCv"){
             const linkCV1 = document.getElementById("linkCv1")   
             const linkCV2 = document.getElementById("linkCv2")      
-            let cv = `./assets/Fullstack Developer JAVA-MERN - COSTA DAVID - Cv${leng=="eng"?" - ENG" :""}.pdf`
+            let cv = `./assets/Curriculum DAVID COSTA - Tec. Desarrollo web - Fullstack JAVA${leng=="eng"?" - ENG" :""}.pdf`
             linkCV1.setAttribute("href",cv)
             linkCV2.setAttribute("href",cv)
+            // assets\Curriculum DAVID COSTA - Tec. Desarrollo web - Fullstack JAVA.pdf
         } else{
             textToChange.innerHTML = textsTraslated[section][value]
         }
