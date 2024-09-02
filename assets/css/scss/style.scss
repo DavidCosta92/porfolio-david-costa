@@ -402,12 +402,13 @@
                 margin-bottom: 50px;
                 text-align: justify;                
                 max-width: 1000px;
+                border-radius: 15px;
                 &:hover{                    
                     .proyectImg{
                         img{
-                            /*
-                            border-radius: 50px;
-                            */
+                            transform: scale(1.025);
+                            border-radius: 10px;
+                            filter: drop-shadow(0 5px 10px var(--text-title-color-light-blue));
                         }
                     }
                 }
@@ -431,7 +432,7 @@
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
-                    .keywordsContainer{
+                    .keywordsContainer{  
                         display: flex;                        
                         flex-wrap: wrap;
                         gap: 5px;
