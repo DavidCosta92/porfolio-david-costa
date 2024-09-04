@@ -10,8 +10,8 @@
         "rol" : "Desarrollador fullstack"
     },
     "aboutMe" : {
-        "sobre" : "Sobre",
-        "mi" : "Mi",
+        "sobre" : "David",
+        "mi" : "Fullstack developer",
         "texto1" : "Soy Técnico en Desarrollo de software, planeo seguir con la licenciatura, y llevo realizando proyectos desde hace mas de 3 años. Estoy enfocado al Backend con JAVA y Spring, además tengo conocimientos en Python, Django, Flask, Node JS y React JS. También conozco de bases de datos SQL y NoSQL.",
         "texto2" : "Mi pasión es crear y desarrollar nuevos productos, optimizar y solucionar problemas. Quiero generar impacto en el mundo a través de la tecnologia!",
         "texto3" : "Si crees que podemos hacer cosas juntos, ¡me encantaría conocerte!",
