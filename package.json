@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^8.0.0",
+    "porfolio": "file:",
     "tiny-typewriter": "^1.0.4"
   }
 }
